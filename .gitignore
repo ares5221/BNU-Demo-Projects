@@ -3,6 +3,19 @@ __pycache__/
 *.py[cod]
 *$py.class
 
+# self ignore
+05multi-classifier/*.xlsx
+05multi-classifier/multi_classifier_pro/*.xlsx
+05multi-classifier/data_clean/*.xlsx
+
+
+
+
+
+
+
+
+
 # C extensions
 *.so
 
