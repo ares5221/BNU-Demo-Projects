@@ -1,0 +1,33 @@
+Paramaters: 100, 100, 20,| 64, 2.0, 200, 1.0, 50
+simulationSR, ave reward, ave turns:0.472 -5.893 3.675 LocalTime:Wed Aug 28 17:46:53 2019
+simulationSR, ave reward, ave turns:0.29 -42.956 4.786 LocalTime:Wed Aug 28 17:52:54 2019
+simulationSR, ave reward, ave turns:0.468 -7.23 4.762 LocalTime:Wed Aug 28 18:01:42 2019
+simulationSR, ave reward, ave turns:0.48 -4.5 4.063 LocalTime:Wed Aug 28 18:09:19 2019
+simulationSR, ave reward, ave turns:0.5 -1.056 5.111 LocalTime:Wed Aug 28 18:20:56 2019
+simulationSR, ave reward, ave turns:0.448 -10.96 4.286 LocalTime:Wed Aug 28 18:24:57 2019
+simulationSR, ave reward, ave turns:0.389 -23.234 5.024 LocalTime:Wed Aug 28 18:32:54 2019
+simulationSR, ave reward, ave turns:0.389 -23.869 6.294 LocalTime:Wed Aug 28 18:37:57 2019
+simulationSR, ave reward, ave turns:0.5 -0.782 4.563 LocalTime:Wed Aug 28 18:42:09 2019
+simulationSR, ave reward, ave turns:0.349 -32.81 8.302 LocalTime:Wed Aug 28 18:55:53 2019
+Paramaters: 100, 100, 20,| 64, 3.0, 200, 1.0, 50
+simulationSR, ave reward, ave turns:0.107 -95.667 37.19 LocalTime:Wed Aug 28 19:15:20 2019
+simulationSR, ave reward, ave turns:0.286 -43.81 4.905 LocalTime:Wed Aug 28 19:25:28 2019
+simulationSR, ave reward, ave turns:0.417 -17.992 5.651 LocalTime:Wed Aug 28 19:38:08 2019
+simulationSR, ave reward, ave turns:0.476 -5.75 4.976 LocalTime:Wed Aug 28 19:47:38 2019
+simulationSR, ave reward, ave turns:0.496 -1.917 5.246 LocalTime:Wed Aug 28 19:54:05 2019
+simulationSR, ave reward, ave turns:0.472 -7.262 6.413 LocalTime:Wed Aug 28 20:07:57 2019
+simulationSR, ave reward, ave turns:0.496 -1.774 4.96 LocalTime:Wed Aug 28 20:17:49 2019
+simulationSR, ave reward, ave turns:0.476 -6.71 6.897 LocalTime:Wed Aug 28 20:32:43 2019
+simulationSR, ave reward, ave turns:0.417 -17.937 5.54 LocalTime:Wed Aug 28 20:41:08 2019
+simulationSR, ave reward, ave turns:0.5 -1.048 5.095 LocalTime:Wed Aug 28 20:50:00 2019
+Paramaters: 100, 100, 20,| 64, 3.0, 200, 2.0, 50
+simulationSR, ave reward, ave turns:0.401 -20.202 3.722 LocalTime:Wed Aug 28 20:54:24 2019
+simulationSR, ave reward, ave turns:0.425 -15.468 3.778 LocalTime:Wed Aug 28 20:59:02 2019
+simulationSR, ave reward, ave turns:0.413 -17.766 3.611 LocalTime:Wed Aug 28 21:02:24 2019
+simulationSR, ave reward, ave turns:0.405 -19.19 3.286 LocalTime:Wed Aug 28 21:06:41 2019
+simulationSR, ave reward, ave turns:0.429 -14.806 4.04 LocalTime:Wed Aug 28 21:10:25 2019
+simulationSR, ave reward, ave turns:0.488 -2.405 3.048 LocalTime:Wed Aug 28 21:14:33 2019
+simulationSR, ave reward, ave turns:0.488 -2.77 3.778 LocalTime:Wed Aug 28 21:21:45 2019
+simulationSR, ave reward, ave turns:0.444 -11.813 4.405 LocalTime:Wed Aug 28 21:29:56 2019
+simulationSR, ave reward, ave turns:0.333 -33.413 3.159 LocalTime:Wed Aug 28 21:36:31 2019
+simulationSR, ave reward, ave turns:0.381 -24.706 4.794 LocalTime:Wed Aug 28 21:43:33 2019
