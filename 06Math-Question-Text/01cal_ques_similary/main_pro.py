@@ -9,6 +9,8 @@ import csv
 
 def read_data(path):
     data = []
+    preprocess_path = './preprocess_result_pro'
+    path = os.path.join(preprocess_path, path)
     with open(path, 'r', encoding='utf-8') as csv_read:
         reader = csv.reader(csv_read)
         for row in reader:
@@ -96,28 +98,34 @@ def sort_by_Levenshtein_ratio(data,sort_name):
                 difflib_val = cal_similarity.ssim(curr_txt1, curr_txt2, model='difflib')
                 curr_str1 = data[idx][0] + ' ' + curr_txt1
                 curr_str2 = data[jdx][0] + ' ' + curr_txt2
-                tmp_dict['Difflib: ' + str(difflib_val) + ' ' + curr_str1 + '<--->' + curr_str2] = leven_ratio_val
+                ss = {}
+                ss['Difflib: '] = difflib_val
+                ss['str1'] = curr_str1
+                ss['str2'] = curr_str2
+                tmp_dict[leven_ratio_val] = ss
     # print(tmp_dict)
-    top = sorted(tmp_dict.items(), key=lambda x: x[1], reverse=True)
-    result_name = os.path.join('./difflib2leven', sort_name + '_result.csv')
+    top = sorted(tmp_dict.items(), key=lambda x: x[0], reverse=True)
+    result_name = os.path.join('./difflib2leven2', sort_name + '_result.csv')
     with open(result_name, 'a', encoding='utf-8', newline='') as csv_write:
         f_csv = csv.writer(csv_write)
-        f_csv.writerow(['--------------The result of sort by %s ------------------' % sort_name])
-        f_csv.writerow(['\tThe computing cost %.3f seconds' % (time.time() - t1)])
-        f_csv.writerow(['相似值', '编辑距离及题目对及对应id'])
+
         for tmp in top:
-            f_csv.writerow(['Levenshtein_ratio: ' +tmp[1], tmp[0]])
-        f_csv.writerow('\n\n')
+            if tmp[0]>0.5:
+                f_csv.writerow(['Levenshtein_ratio: ' + tmp[0]])
+                f_csv.writerow(['Difflib: '+tmp[1]['Difflib: ']])
+                f_csv.writerow(['str1： '+tmp[1]['str1']])
+                f_csv.writerow(['str2： '+tmp[1]['str2']])
+                f_csv.writerow('\n')
 
 
 if __name__ == '__main__':
     print('start...')
-    data_file_list = ['single_choice_data.csv','fill_in_blanks_data.csv','subjective_question_data.csv']
+    data_file_list = ['fill_in_blanks_data.csv','single_choice_data.csv','subjective_question_data.csv']
     for curr_file in data_file_list:
         data = read_data(curr_file)
         # sort_by_difflib(data,curr_file +'_difflib')
         # sort_by_Levenshtein_dist(data,curr_file +'_Leven_dist')
-        sort_by_Levenshtein_ratio(data,curr_file +'_Difflib_Leven_ratio')
+        sort_by_Levenshtein_ratio(data,curr_file[:-4] +'_Leven&LCS')
 
     print('end...')
 

@@ -5,10 +5,11 @@ import xlrd
 import csv
 import re
 
-'''
-严格的文本预处理，对于含有img的直接去除
-'''
+base_dir = './preprocess_result_pro'
 
+'''
+不严格的文本预处理，对于含有img的，将img替换为空字符
+'''
 def get_data(data_path):
     workbook = xlrd.open_workbook(data_path)
     sheet = workbook.sheet_by_index(1)#索引的方式，从0开始
@@ -45,14 +46,17 @@ def process_single_choice(sheet, row,id):
     ques_desc_idx = 2  # 题干内容
     sele_desc_idx = 3  # 选项内容
     min_len = 2 # 题干最小长度
-    with open('single_choice_data.csv', 'a', encoding='utf-8',newline='') as csv_write:
+    with open(os.path.join(base_dir,'single_choice_data.csv'), 'a', encoding='utf-8',newline='') as csv_write:
         f_csv = csv.writer(csv_write)
         ques_desc = sheet.cell(row, ques_desc_idx).value
         sele_desc = sheet.cell(row,sele_desc_idx).value
 
-        is_text_ques_desc = is_text(ques_desc)
-        is_text_sele_desc = is_text(sele_desc)
-        if is_text_ques_desc and is_text_sele_desc:
+        # is_text_ques_desc = is_text(ques_desc)
+        # is_text_sele_desc = is_text(sele_desc)
+        ques_desc = replace_img_str(ques_desc)
+        sele_desc = replace_img_str(sele_desc)
+        if True:
+        # if is_text_ques_desc and is_text_sele_desc:
             ques_desc = clean_ques_desc(ques_desc)
             sele_desc = clean_select_desc(sele_desc)
             if len(ques_desc) > min_len:
@@ -62,12 +66,12 @@ def process_single_choice(sheet, row,id):
 def process_fill_in_blanks(sheet, row,id):
     ques_desc_idx = 2  # 题干内容
     min_len = 2  # 题干最小长度
-    with open('fill_in_blanks_data.csv', 'a', encoding='utf-8', newline='') as csv_write:
+    with open(os.path.join(base_dir,'fill_in_blanks_data.csv'), 'a', encoding='utf-8', newline='') as csv_write:
         f_csv = csv.writer(csv_write)
         ques_desc = sheet.cell(row, ques_desc_idx).value
 
-        is_text_ques_desc = is_text(ques_desc)
-        if is_text_ques_desc:
+        ques_desc = replace_img_str(ques_desc)
+        if True:
             ques_desc = clean_ques_desc(ques_desc)
             if len(ques_desc) > min_len:
                 f_csv.writerow([id, ques_desc])
@@ -75,12 +79,12 @@ def process_fill_in_blanks(sheet, row,id):
 def process_subjective(sheet, row,id):
     ques_desc_idx = 2  # 题干内容
     min_len = 2  # 题干最小长度
-    with open('subjective_question_data.csv', 'a', encoding='utf-8', newline='') as csv_write:
+    with open(os.path.join(base_dir,'subjective_question_data.csv'), 'a', encoding='utf-8', newline='') as csv_write:
         f_csv = csv.writer(csv_write)
         ques_desc = sheet.cell(row, ques_desc_idx).value
 
-        is_text_ques_desc = is_text(ques_desc)
-        if is_text_ques_desc:
+        ques_desc = replace_img_str(ques_desc)
+        if True:
             ques_desc = clean_ques_desc(ques_desc)
             if len(ques_desc) > min_len:
                 f_csv.writerow([id, ques_desc])
@@ -93,9 +97,9 @@ def clean_ques_desc(ques_desc):
     :return:
     '''
     # 1去除不合法字符
-    ques_desc = ques_desc.replace(' ', '').replace('\n', '')\
+    ques_desc = ques_desc.replace('　', '').replace('\n', '')\
         .replace('　','').replace('_','').replace('□', '')\
-        .replace('．','').replace('（）','').replace('()','')
+        .replace('．','').replace('（）','').replace('()','').replace(' ','')
     # 2去除（   ）中文括号中多个空格情况
     ques_desc = re.sub(r'（\s+）', '（）', ques_desc)
     # 3去除(    )英文括号中多个空格情况
@@ -130,15 +134,9 @@ def clean_select_desc(sele_desc):
     return sele_desc
 
 
-def is_text(curr):
-    pattern = re.compile(r'(.*?)__img(.*?).(png|jpg|jpeg|bmp|gif)(.*?)')  # 匹配非文本的img
-    result = pattern.findall(curr)
-    # print(result)
-    if result:
-        return False
-    else:
-        return True
-
+def replace_img_str(curr):
+    curr = re.sub(r'__img(.*?).(png|jpg|jpeg|bmp|gif)', '', curr)
+    return curr
 
 if __name__ == '__main__':
     print('start...')

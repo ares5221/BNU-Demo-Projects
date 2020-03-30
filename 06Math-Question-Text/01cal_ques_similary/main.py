@@ -13,15 +13,15 @@ def read_data(path):
         reader = csv.reader(csv_read)
         for row in reader:
             data.append(row)
-    return data[1:]
+    return data[0:]
 
 def cal_similarity_jaccard(data):
     # print(len(data)) #3321
     # print(data[0])#['2', '如果一个命题的逆命题是真命题，那么这个命题的(\xa0\xa0\xa0)']
     # print(data[0][1])#如果一个命题的逆命题是真命题，那么这个命题的(   )
 
-    simi_method_list = ['cosine', 'idf', 'bm25', 'jaccard','difflib','editdist', 'bert']
-    simi_method_list = ['editdist']
+    simi_method_list = ['cosine', 'idf', 'bm25', 'jaccard','difflib','Leven_ratio', 'bert']
+    # simi_method_list = ['Leven_ratio']
     for func in simi_method_list:
         t1 = time.time()
         tmp_dict = {}
@@ -42,7 +42,7 @@ def cal_similarity_jaccard(data):
                     tmp_dict[curr_str1 + '<--->' + curr_str2] = simi_val
         # print(tmp_dict)
         top = sorted(tmp_dict.items(), key=lambda x: x[1], reverse=True)
-        result_name = os.path.join('./result',func+'_result.csv')
+        result_name = os.path.join('./result1',func+'_result.csv')
         with open(result_name,'a', encoding='utf-8',newline='') as csv_write:
             f_csv = csv.writer(csv_write)
             f_csv.writerow(['--------------The result of %s method------------------' % func])
@@ -54,8 +54,10 @@ def cal_similarity_jaccard(data):
 
 
 if __name__ == '__main__':
-    data_file = 'data.csv'
+    # data_file = 'fill_in_blanks_data.csv'
+    data_file = 'test5.csv'
     data = read_data(data_file)
+    print(data)
     cal_similarity_jaccard(data)
 
 
