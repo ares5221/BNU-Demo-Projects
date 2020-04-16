@@ -58,8 +58,21 @@ def process_single_choice(sheet, row,id):
         if True:
             ques_desc = clean_ques_desc(ques_desc)
             sele_desc = clean_select_desc(sele_desc)
-            if len(ques_desc) > min_len:
+            if len(ques_desc) > min_len and len(sele_desc) <1:
+                save_no_choice_que(id,ques_desc)
+            if len(ques_desc) > min_len and len(sele_desc)>=1:
                 f_csv.writerow([id, ques_desc+' '+sele_desc])
+
+
+def save_no_choice_que(id, que_desc):
+    '''
+    对于选项或者答案为空的情况，作为一种新题型数据保存，只保存题干信息
+    :param que_desc:
+    :return:
+    '''
+    with  open(os.path.join(base_dir, 'no_choice_data.csv'), 'a', encoding='utf-8', newline='') as csv_write:
+        f_csv = csv.writer(csv_write)
+        f_csv.writerow([id,que_desc])
 
 
 def process_fill_in_blanks(sheet, row,id):
@@ -126,8 +139,9 @@ def clean_ques_desc(ques_desc):
         ques_desc = ques_desc[:-2]
     if ques_desc.endswith('.') or ques_desc.endswith('。') or ques_desc.endswith('？') \
             or ques_desc.endswith('：') or ques_desc.endswith('?') or ques_desc.endswith(':') \
-            or ques_desc.endswith('（') or ques_desc.endswith('(') or ques_desc.endswith('=') \
-            or ques_desc.endswith('）') or ques_desc.endswith(')'):
+            or ques_desc.endswith('（') or ques_desc.endswith('(') or ques_desc.endswith('='):
+            # or ques_desc.endswith('）') or ques_desc.endswith(')'):
+
         ques_desc = ques_desc[:-1]
     return ques_desc
 
