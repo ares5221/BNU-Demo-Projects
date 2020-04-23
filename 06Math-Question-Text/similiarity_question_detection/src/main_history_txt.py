@@ -6,19 +6,19 @@ import time
 import csv
 import Levenshtein
 import uuid
-resutl_path = './../result/chinese_result0421/'
-threshold_maximum = 0.9 #阈值大于0.9认为相似
-threshold_minimum = 0.8  #阈值小于0.8认为不相似
+resutl_path = './../result/history_result0422/'
+threshold_maximum = 0.5 #阈值大于0.9认为相似
+threshold_minimum = 0.0  #阈值小于0.8认为不相似
 
 # 用于无选项或者答案的题目及判断题的情况的阈值设定
-threshold_maximum1 = 0.95 #阈值大于0.95认为相似
-threshold_minimum2 = 0.8  #阈值小于0.8认为不相似
+threshold_maximum1 = 0.5 #阈值大于0.95认为相似
+threshold_minimum2 = 0.0  #阈值小于0.8认为不相似
 
 threshold_save = 0.5  #阈值小于0.5不保存
 
 def read_data(path):
     data = []
-    preprocess_path = './../data/preprocess_result_chinese'
+    preprocess_path = './../data/preprocess_result_history'
     path = os.path.join(preprocess_path, path)
     with open(path, 'r', encoding='utf-8') as csv_read:
         reader = csv.reader(csv_read)
@@ -43,6 +43,7 @@ def cal_question_no_choice_or_answer(data, sort_name):
                 que_str_simi_val = round(que_str_simi_val,4)
                 curr_str1 = data[idx][0] + ' ' + curr_txt1
                 curr_str2 = data[jdx][0] + ' ' + curr_txt2
+
                 if que_str_simi_val >= threshold_maximum1:
                     ss = {}
                     ss['que_str_simi_val'] = que_str_simi_val
@@ -58,11 +59,13 @@ def cal_question_no_choice_or_answer(data, sort_name):
                 else:
                     pass
 
-    sele_dict = [que_str_pos, que_str_notsure]
+    # sele_dict = [que_str_pos, que_str_notsure]
+    sele_dict = [que_str_pos]
     for tmp_dict_idx in range(len(sele_dict)):
         top1 = sorted(sele_dict[tmp_dict_idx].items(), key=lambda x: x[1]['que_str_simi_val'], reverse=True)
         if tmp_dict_idx == 0:
-            tmp_name = '01题干描述相似0.9及以上 认为相似'
+            # tmp_name = '01题干描述相似0.9及以上 认为相似'
+            tmp_name = '历史题目比较'
         elif tmp_dict_idx == 1:
             tmp_name = '02题干描述不确定 人工校验'
 
@@ -135,12 +138,13 @@ def cal_question_with_choice_or_answer(data, sort_name):
                             ss['str4'] = curr_str4
                             que_str_notsure_choice_notsure[uuid.uuid1()] = ss
 
-    sele_dict = [que_str_pos_choice_pos, que_str_notsure_choice_pos,
-                 que_str_notsure_choice_notsure]
+    # sele_dict = [que_str_pos_choice_pos, que_str_notsure_choice_pos,que_str_notsure_choice_notsure]
+    sele_dict = [que_str_pos_choice_pos]
     for tmp_dict_idx in range(len(sele_dict)):
         top1 = sorted(sele_dict[tmp_dict_idx].items(), key=lambda x: x[1]['que_str_simi_val'], reverse=True)
         if tmp_dict_idx == 0:
-            tmp_name = '01题干描述相似0.9及以上 答案描述相似或者不确定，认为相似'
+            # tmp_name = '01题干描述相似0.9及以上 答案描述相似或者不确定，认为相似'
+            tmp_name = '历史题目比较'
         elif tmp_dict_idx == 1:
             tmp_name = '02题干描述不确定 答案描述相似 认为相似'
         elif tmp_dict_idx == 2:
@@ -168,6 +172,7 @@ if __name__ == '__main__':
         if curr_file == 'single_choice_data.csv' or curr_file == 'multi_choice_question_data.csv' \
                 or curr_file == 'fill_in_blanks_data.csv' or curr_file =='subjective_question_data.csv':
             cal_question_with_choice_or_answer(data, curr_file[:-4] + '_')
+            pass
         else:
             # pass
             cal_question_no_choice_or_answer(data, curr_file[:-4] + '_')

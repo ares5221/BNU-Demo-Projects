@@ -5,10 +5,13 @@ import time
 
 math_path = './../../data_source/math_source0409.xls'
 chinese_path = './../../data_source/chinese_source0409.xls'
+physical_path = './../../data_source/physical_source0422.xls'
+history_path = './../../data_source/history_source0422.xls'
 
 math_target_path = './../../data_split/math_split0409.xls'
 chinese_target_path = './../../data_split/chinese_split0409.xls'
-
+physical_target_path = './../../data_split/physical_split0422.xls'
+history_target_path = './../../data_split/history_split0422.xls'
 
 def split(src_path, tar_path):
     rb = xlrd.open_workbook(src_path)
@@ -77,8 +80,12 @@ if __name__ == '__main__':
     print(os.path.abspath('.'))
     print('start split...')
     # deal math
-    split(math_path, math_target_path)
+    # split(math_path, math_target_path)
     # deal chinese
-    split(chinese_path, chinese_target_path)
+    # split(chinese_path, chinese_target_path)
+    # deal physical
+    split(physical_path, physical_target_path)
+    # deal history
+    split(history_path, history_target_path)
     print('end split. ')
     print('curr time: ', time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
