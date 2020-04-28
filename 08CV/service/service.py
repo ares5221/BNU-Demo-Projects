@@ -1,13 +1,14 @@
+import os
+os.environ["CUDA_DEVICE_ORDER"] = "PCI_BUS_ID"
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
+
 import tensorflow as tf
 import cv2 as cv
 import numpy as np
 import time
 import math
 
-# ss = tf.test.is_gpu_available()
-# print(ss)
 # gpu = tf.config.experimental.list_physical_devices(device_type='GPU')
-# print(gpu)
 # assert len(gpu) == 1
 # tf.config.experimental.set_memory_growth(gpu[0], True)
 
@@ -103,9 +104,9 @@ def gaze_emo(img_path, mirror_label=True):
             eye_right = cv.resize(eye_right, (64, 64))
             face = cv.resize(face, (64, 64))
 
-            eye_left = eye_left[:, :, [2, 1, 0]] / 255. - 0.5
-            eye_right = eye_right[:, :, [2, 1, 0]] / 255. - 0.5
-            emo_face = face[:, :, [2, 1, 0]]
+            eye_left = eye_left[:, :, [2, 1, 0]].astype('float32') / 255. - 0.5
+            eye_right = eye_right[:, :, [2, 1, 0]].astype('float32') / 255. - 0.5
+            emo_face = face[:, :, [2, 1, 0]].astype('float32')
             face = emo_face / 255. - 0.5
             face_mask = np.reshape(face_mask, (face_mask.shape[0], -1)).astype('float32')
             if mirror_label:
