@@ -126,4 +126,5 @@ def gaze_emo(img_path, mirror_label=True):
             return gaze_pred[0], emo_pred[0][0, 0], grey
 
 
-gaze_emo("img.png", mirror_label=True)
+if __name__ == "__main__":
+    gaze_emo("img.png", mirror_label=True)
