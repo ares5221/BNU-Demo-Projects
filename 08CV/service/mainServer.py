@@ -15,11 +15,14 @@ http://172.24.227.247:9010/?question=xxx
     varDict = request.query
     img_path = varDict['img_path']
     img_path = download_pic(img_path)
-
+    print('img path:',img_path)
     res1, res2,res3 =gaze_emo(img_path, mirror_label=True)
     res1 = str(res1)
     res2 = str(res2)
-    ss = {'res1': res1,'res2': res2}
+    if not res1 or not res2:
+        ss = {'res1': 'res1 is none','res2': 'res2 is none'}
+    if res1 and res2:
+        ss = {'res1': res1,'res2': res2}
     print('Finish！Current time is:',
           time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(time.time())))
     return web.json_response(ss)

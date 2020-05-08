@@ -121,10 +121,19 @@ def gaze_emo(img_path, mirror_label=True):
 
             gaze_pred = gaze_model.predict([data1, data2, data3, data4])
             emo_pred = emo_model.predict(emo_input)
+
             print(gaze_pred[0])
             print(emo_pred[0][0, 0])
             return gaze_pred[0], emo_pred[0][0, 0], grey
+    else:
+        print('##')
+        return None,None,None
 
 
 if __name__ == "__main__":
-    gaze_emo("img.png", mirror_label=True)
+    s1,s2,s3 =gaze_emo("./pic/test.png", mirror_label=True)
+
+    if s1 and s2 and s3:
+        print(s1,s2,s3)
+    else:
+        print('return none')
