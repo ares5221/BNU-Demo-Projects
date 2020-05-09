@@ -60,7 +60,7 @@ def gaze_emo(img_path, mirror_label=True):
     bandwidth = h * 0.5
     img = img[:, math.floor(ce - bandwidth):math.floor(ce + bandwidth), :]
     grey = cv.cvtColor(img, cv.COLOR_RGB2GRAY)
-    faces = face_cascade.detectMultiScale(grey, 1.3, 5)
+    faces = face_cascade.detectMultiScale(grey, 1.1)
     if len(faces) > 0:
         distance_from_center = np.array((faces[:, 0] - 320) ** 2 + (faces[:, 1] - 240) ** 2)
         cf_idx = np.argmin(distance_from_center)
@@ -71,7 +71,7 @@ def gaze_emo(img_path, mirror_label=True):
         roi_grey = grey[y:np.int(y + h * 0.6), x:x + w]
         max_eye_size = np.int(w / 4.)
         min_eye_size = np.int(w / 20.)
-        eyes = eye_cascade.detectMultiScale(roi_grey, 2, 5, minSize=(min_eye_size, min_eye_size),
+        eyes = eye_cascade.detectMultiScale(roi_grey, 1.2, 5, minSize=(min_eye_size, min_eye_size),
                                             maxSize=(max_eye_size, max_eye_size))
         for (ex, ey, ew, eh) in eyes:
             eyeinfo.append([ex, ey, ew, eh])
@@ -125,9 +125,12 @@ def gaze_emo(img_path, mirror_label=True):
             print(gaze_pred[0])
             print(emo_pred[0][0, 0])
             return gaze_pred[0], emo_pred[0][0, 0], grey
+        else:
+            print('##')
+            return None, None, grey
     else:
         print('##')
-        return None,None,None
+        return None, None, grey
 
 
 if __name__ == "__main__":
