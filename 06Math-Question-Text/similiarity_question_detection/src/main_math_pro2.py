@@ -27,7 +27,7 @@ def read_data(path):
     return data[:]
 
 
-def cal_blank_subj_Levenshtein_ratio(data, sort_name):
+def cal_question_no_choice_or_answer(data, sort_name):
     # 两个题目都含有公式
     que_latex_str_pos = {}  # 两个题目的公式相似 描述相似或不确定 认定相似
     que_latex_str_neg = {}  # 两个题目的公式相似，描述不相似 认定不相似
@@ -187,7 +187,7 @@ def cal_blank_subj_Levenshtein_ratio(data, sort_name):
                     f.write('\n')
 
 
-def cal_single_choice_Levenshtein_ratio(data, sort_name):
+def cal_question_with_choice_or_answer(data, sort_name):
     que_str_latex_choice_str_latex_pos = {}  # 题干公式相似0.95及以上 题干描述相似0.95及以上 选项公式相似0.95及以上 选项描述相似0.8以上，判定相似
     que_str_latex_choice_latex_str_neg = {}  # 题干公式相似0.95及以上 题干描述相似0.95及以上 选项公式相似0.95及以上 选项描述相似0.8及以下，判定不相似
 
@@ -1050,11 +1050,11 @@ if __name__ == '__main__':
                       'subjective_question_data.csv', 'no_choice_data.csv']
     for curr_file in data_file_list:
         data = read_data(curr_file)
-        if curr_file == 'single_choice_data.csv':
+        if curr_file == 'single_choice_data.csv' or curr_file=='fill_in_blanks_data.csv':
             # pass
-            cal_single_choice_Levenshtein_ratio(data, curr_file[:-4] + '_')
+            cal_question_with_choice_or_answer(data, curr_file[:-4] + '_')
         else:
             # pass
-            cal_blank_subj_Levenshtein_ratio(data, curr_file[:-4] + '_')
+            cal_question_no_choice_or_answer(data, curr_file[:-4] + '_')
 
     print('end...')

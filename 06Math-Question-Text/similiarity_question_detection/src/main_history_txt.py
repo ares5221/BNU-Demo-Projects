@@ -7,8 +7,8 @@ import csv
 import Levenshtein
 import uuid
 resutl_path = './../result/history_result0422/'
-threshold_maximum = 0.5 #阈值大于0.9认为相似
-threshold_minimum = 0.0  #阈值小于0.8认为不相似
+threshold_maximum = 0.9 #阈值大于0.9认为相似
+threshold_minimum = 0.8  #阈值小于0.8认为不相似
 
 # 用于无选项或者答案的题目及判断题的情况的阈值设定
 threshold_maximum1 = 0.5 #阈值大于0.95认为相似

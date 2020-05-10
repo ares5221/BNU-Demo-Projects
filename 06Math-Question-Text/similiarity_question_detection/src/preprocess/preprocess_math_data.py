@@ -4,7 +4,7 @@ import os
 import xlrd
 import csv
 import re
-
+import json
 
 data_path = './../../data_split/math_split0409.xls'
 base_dir = './../../data/preprocess_result_math'
@@ -77,15 +77,24 @@ def save_no_choice_que(id, que_desc):
 
 def process_fill_in_blanks(sheet, row,id):
     ques_desc_idx = 2  # 题干内容
+    ans_desc_idx = 5  # 填空答案
     min_len = 3  # 题干最小长度
     with open(os.path.join(base_dir,'fill_in_blanks_data.csv'), 'a', encoding='utf-8', newline='') as csv_write:
         f_csv = csv.writer(csv_write)
         ques_desc = sheet.cell(row, ques_desc_idx).value
+        ans_desc = sheet.cell(row, ans_desc_idx).value
         ques_desc = replace_img_str(ques_desc)
+
+        ans_desc = replace_img_str(ans_desc)
+        print(ans_desc)
         if True:
             ques_desc = clean_ques_desc(ques_desc)
-            if len(ques_desc) > min_len:
-                f_csv.writerow([id, ques_desc])
+            ans_desc = clean_ans_desc(ans_desc)
+            ans_desc = clean_select_desc(ans_desc)
+            if len(ans_desc) < 1:
+                save_no_choice_que(id, ques_desc)
+            if len(ques_desc) > min_len and len(ans_desc) >= 1:
+                f_csv.writerow([id, ques_desc + ' ' + ans_desc])
 
 
 def process_subjective(sheet, row,id):
@@ -158,6 +167,18 @@ def clean_select_desc(sele_desc):
     if len(sele_desc.replace('、','')) <=4 and 'D' in sele_desc:
         sele_desc = ''
     return sele_desc
+
+
+def clean_ans_desc(ans_desc):
+    ans = ''
+    jsonArr = json.loads(ans_desc)
+    for tmp in jsonArr:
+        for key, val in tmp.items():
+            # print(key, val)
+            if key == 'value' and val:
+                tmpval = val[0].replace(' ','').replace('\xa0','')
+                ans += tmpval
+    return ans
 
 
 def replace_img_str(curr):

@@ -41,7 +41,7 @@ def process(src_path, tar_path):
         img_id = image_process(bs_stem, img_id)
         img_id = image_process(bs_item, img_id)
         img_id = image_process(bs_sub_item, img_id)
-        imag_id = image_process(bs_answer, img_id)
+        img_id = image_process(bs_answer, img_id)
 
         stem = bs_stem.get_text()
         item = bs_item.get_text()
@@ -64,11 +64,12 @@ def image_process(bs, img_id):
     if stem_imgs is not None:
         for img in stem_imgs:
             src = img['src']
-
+            # 有的网址格式为 \"https://cdncxxxxs2.png\" 字符串的开头结尾导致提取图片失败
+            if str(src).startswith('\\"') and src.endswith('\\"'):
+                src = src[2:-2]
             suffix = os.path.splitext(src)[1]
             name = 'img' + str(img_id) + suffix
             img_path = '../data/smart_partner/img/' + name
-
             img.replace_with('__' + name)
 
             # image = requests.get(src)
