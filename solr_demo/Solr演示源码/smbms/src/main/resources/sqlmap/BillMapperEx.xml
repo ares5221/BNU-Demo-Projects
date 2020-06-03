@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.dao.BillMapperEx" >
+    <select id="getBillDetailById" resultType="BillEx">
+        SELECT
+            sb.id,
+            sb.billCode,
+            sb.productName,
+            sp.proName,
+            sb.totalPrice,
+            sb.isPayment,
+            sb.creationDate,
+            sb.productPic
+        FROM
+            smbms_bill sb
+            LEFT JOIN smbms_provider sp ON sb.providerId = sp.id
+        WHERE sb.id = #{id}
+    </select>
+
+    <select id="getBillListByParam" resultType="BillEx">
+        SELECT
+            sb.id,
+            sb.billCode,
+            sb.productName,
+            sp.proName,
+            sb.totalPrice,
+            sb.isPayment,
+            sb.creationDate
+        FROM
+            smbms_bill sb
+            LEFT JOIN smbms_provider sp ON sb.providerId = sp.id
+        <where>
+            <if test="productName!=null and productName!=''">
+                AND productName LIKE CONCAT("%",#{productName},"%")
+            </if>
+            <if test="providerId!=null">
+                AND providerId = #{providerId}
+            </if>
+            <if test="isPayment!=null">
+                AND isPayment = #{isPayment}
+            </if>
+        </where>
+    </select>
+</mapper>

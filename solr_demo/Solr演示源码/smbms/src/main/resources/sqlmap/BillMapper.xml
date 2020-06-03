@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.dao.BillMapper" >
+  <resultMap id="BaseResultMap" type="com.kgc.pojo.Bill" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="billCode" property="billcode" jdbcType="VARCHAR" />
+    <result column="productName" property="productname" jdbcType="VARCHAR" />
+    <result column="productDesc" property="productdesc" jdbcType="VARCHAR" />
+    <result column="productUnit" property="productunit" jdbcType="VARCHAR" />
+    <result column="productCount" property="productcount" jdbcType="DECIMAL" />
+    <result column="totalPrice" property="totalprice" jdbcType="DECIMAL" />
+    <result column="isPayment" property="ispayment" jdbcType="INTEGER" />
+    <result column="createdBy" property="createdby" jdbcType="BIGINT" />
+    <result column="creationDate" property="creationdate" jdbcType="TIMESTAMP" />
+    <result column="modifyBy" property="modifyby" jdbcType="BIGINT" />
+    <result column="modifyDate" property="modifydate" jdbcType="TIMESTAMP" />
+    <result column="providerId" property="providerid" jdbcType="BIGINT" />
+    <result column="productPic" property="productpic" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, billCode, productName, productDesc, productUnit, productCount, totalPrice, isPayment, 
+    createdBy, creationDate, modifyBy, modifyDate, providerId, productPic
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.kgc.pojo.BillCriteria" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from smbms_bill
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from smbms_bill
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from smbms_bill
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.kgc.pojo.BillCriteria" >
+    delete from smbms_bill
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.kgc.pojo.Bill" >
+    insert into smbms_bill (id, billCode, productName, 
+      productDesc, productUnit, productCount, 
+      totalPrice, isPayment, createdBy, 
+      creationDate, modifyBy, modifyDate, 
+      providerId, productPic)
+    values (#{id,jdbcType=BIGINT}, #{billcode,jdbcType=VARCHAR}, #{productname,jdbcType=VARCHAR}, 
+      #{productdesc,jdbcType=VARCHAR}, #{productunit,jdbcType=VARCHAR}, #{productcount,jdbcType=DECIMAL}, 
+      #{totalprice,jdbcType=DECIMAL}, #{ispayment,jdbcType=INTEGER}, #{createdby,jdbcType=BIGINT}, 
+      #{creationdate,jdbcType=TIMESTAMP}, #{modifyby,jdbcType=BIGINT}, #{modifydate,jdbcType=TIMESTAMP}, 
+      #{providerid,jdbcType=BIGINT}, #{productpic,jdbcType=VARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.kgc.pojo.Bill">
+    insert into smbms_bill
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="billcode != null" >
+        billCode,
+      </if>
+      <if test="productname != null" >
+        productName,
+      </if>
+      <if test="productdesc != null" >
+        productDesc,
+      </if>
+      <if test="productunit != null" >
+        productUnit,
+      </if>
+      <if test="productcount != null" >
+        productCount,
+      </if>
+      <if test="totalprice != null" >
+        totalPrice,
+      </if>
+      <if test="ispayment != null" >
+        isPayment,
+      </if>
+      <if test="createdby != null" >
+        createdBy,
+      </if>
+      <if test="creationdate != null" >
+        creationDate,
+      </if>
+      <if test="modifyby != null" >
+        modifyBy,
+      </if>
+      <if test="modifydate != null" >
+        modifyDate,
+      </if>
+      <if test="providerid != null" >
+        providerId,
+      </if>
+      <if test="productpic != null" >
+        productPic,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="billcode != null" >
+        #{billcode,jdbcType=VARCHAR},
+      </if>
+      <if test="productname != null" >
+        #{productname,jdbcType=VARCHAR},
+      </if>
+      <if test="productdesc != null" >
+        #{productdesc,jdbcType=VARCHAR},
+      </if>
+      <if test="productunit != null" >
+        #{productunit,jdbcType=VARCHAR},
+      </if>
+      <if test="productcount != null" >
+        #{productcount,jdbcType=DECIMAL},
+      </if>
+      <if test="totalprice != null" >
+        #{totalprice,jdbcType=DECIMAL},
+      </if>
+      <if test="ispayment != null" >
+        #{ispayment,jdbcType=INTEGER},
+      </if>
+      <if test="createdby != null" >
+        #{createdby,jdbcType=BIGINT},
+      </if>
+      <if test="creationdate != null" >
+        #{creationdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyby != null" >
+        #{modifyby,jdbcType=BIGINT},
+      </if>
+      <if test="modifydate != null" >
+        #{modifydate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="providerid != null" >
+        #{providerid,jdbcType=BIGINT},
+      </if>
+      <if test="productpic != null" >
+        #{productpic,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.kgc.pojo.BillCriteria" resultType="java.lang.Integer" >
+    select count(*) from smbms_bill
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update smbms_bill
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.billcode != null" >
+        billCode = #{record.billcode,jdbcType=VARCHAR},
+      </if>
+      <if test="record.productname != null" >
+        productName = #{record.productname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.productdesc != null" >
+        productDesc = #{record.productdesc,jdbcType=VARCHAR},
+      </if>
+      <if test="record.productunit != null" >
+        productUnit = #{record.productunit,jdbcType=VARCHAR},
+      </if>
+      <if test="record.productcount != null" >
+        productCount = #{record.productcount,jdbcType=DECIMAL},
+      </if>
+      <if test="record.totalprice != null" >
+        totalPrice = #{record.totalprice,jdbcType=DECIMAL},
+      </if>
+      <if test="record.ispayment != null" >
+        isPayment = #{record.ispayment,jdbcType=INTEGER},
+      </if>
+      <if test="record.createdby != null" >
+        createdBy = #{record.createdby,jdbcType=BIGINT},
+      </if>
+      <if test="record.creationdate != null" >
+        creationDate = #{record.creationdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.modifyby != null" >
+        modifyBy = #{record.modifyby,jdbcType=BIGINT},
+      </if>
+      <if test="record.modifydate != null" >
+        modifyDate = #{record.modifydate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.providerid != null" >
+        providerId = #{record.providerid,jdbcType=BIGINT},
+      </if>
+      <if test="record.productpic != null" >
+        productPic = #{record.productpic,jdbcType=VARCHAR},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update smbms_bill
+    set id = #{record.id,jdbcType=BIGINT},
+      billCode = #{record.billcode,jdbcType=VARCHAR},
+      productName = #{record.productname,jdbcType=VARCHAR},
+      productDesc = #{record.productdesc,jdbcType=VARCHAR},
+      productUnit = #{record.productunit,jdbcType=VARCHAR},
+      productCount = #{record.productcount,jdbcType=DECIMAL},
+      totalPrice = #{record.totalprice,jdbcType=DECIMAL},
+      isPayment = #{record.ispayment,jdbcType=INTEGER},
+      createdBy = #{record.createdby,jdbcType=BIGINT},
+      creationDate = #{record.creationdate,jdbcType=TIMESTAMP},
+      modifyBy = #{record.modifyby,jdbcType=BIGINT},
+      modifyDate = #{record.modifydate,jdbcType=TIMESTAMP},
+      providerId = #{record.providerid,jdbcType=BIGINT},
+      productPic = #{record.productpic,jdbcType=VARCHAR}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.kgc.pojo.Bill" >
+    update smbms_bill
+    <set >
+      <if test="billcode != null" >
+        billCode = #{billcode,jdbcType=VARCHAR},
+      </if>
+      <if test="productname != null" >
+        productName = #{productname,jdbcType=VARCHAR},
+      </if>
+      <if test="productdesc != null" >
+        productDesc = #{productdesc,jdbcType=VARCHAR},
+      </if>
+      <if test="productunit != null" >
+        productUnit = #{productunit,jdbcType=VARCHAR},
+      </if>
+      <if test="productcount != null" >
+        productCount = #{productcount,jdbcType=DECIMAL},
+      </if>
+      <if test="totalprice != null" >
+        totalPrice = #{totalprice,jdbcType=DECIMAL},
+      </if>
+      <if test="ispayment != null" >
+        isPayment = #{ispayment,jdbcType=INTEGER},
+      </if>
+      <if test="createdby != null" >
+        createdBy = #{createdby,jdbcType=BIGINT},
+      </if>
+      <if test="creationdate != null" >
+        creationDate = #{creationdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyby != null" >
+        modifyBy = #{modifyby,jdbcType=BIGINT},
+      </if>
+      <if test="modifydate != null" >
+        modifyDate = #{modifydate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="providerid != null" >
+        providerId = #{providerid,jdbcType=BIGINT},
+      </if>
+      <if test="productpic != null" >
+        productPic = #{productpic,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.kgc.pojo.Bill" >
+    update smbms_bill
+    set billCode = #{billcode,jdbcType=VARCHAR},
+      productName = #{productname,jdbcType=VARCHAR},
+      productDesc = #{productdesc,jdbcType=VARCHAR},
+      productUnit = #{productunit,jdbcType=VARCHAR},
+      productCount = #{productcount,jdbcType=DECIMAL},
+      totalPrice = #{totalprice,jdbcType=DECIMAL},
+      isPayment = #{ispayment,jdbcType=INTEGER},
+      createdBy = #{createdby,jdbcType=BIGINT},
+      creationDate = #{creationdate,jdbcType=TIMESTAMP},
+      modifyBy = #{modifyby,jdbcType=BIGINT},
+      modifyDate = #{modifydate,jdbcType=TIMESTAMP},
+      providerId = #{providerid,jdbcType=BIGINT},
+      productPic = #{productpic,jdbcType=VARCHAR}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>

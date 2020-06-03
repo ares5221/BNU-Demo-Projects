@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.kgc.dao.ProviderMapper" >
+  <resultMap id="BaseResultMap" type="com.kgc.pojo.Provider" >
+    <id column="id" property="id" jdbcType="BIGINT" />
+    <result column="proCode" property="procode" jdbcType="VARCHAR" />
+    <result column="proName" property="proname" jdbcType="VARCHAR" />
+    <result column="proDesc" property="prodesc" jdbcType="VARCHAR" />
+    <result column="proContact" property="procontact" jdbcType="VARCHAR" />
+    <result column="proPhone" property="prophone" jdbcType="VARCHAR" />
+    <result column="proAddress" property="proaddress" jdbcType="VARCHAR" />
+    <result column="proFax" property="profax" jdbcType="VARCHAR" />
+    <result column="createdBy" property="createdby" jdbcType="BIGINT" />
+    <result column="creationDate" property="creationdate" jdbcType="TIMESTAMP" />
+    <result column="modifyDate" property="modifydate" jdbcType="TIMESTAMP" />
+    <result column="modifyBy" property="modifyby" jdbcType="BIGINT" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, proCode, proName, proDesc, proContact, proPhone, proAddress, proFax, createdBy, 
+    creationDate, modifyDate, modifyBy
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.kgc.pojo.ProviderCriteria" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from smbms_provider
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Long" >
+    select 
+    <include refid="Base_Column_List" />
+    from smbms_provider
+    where id = #{id,jdbcType=BIGINT}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long" >
+    delete from smbms_provider
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.kgc.pojo.ProviderCriteria" >
+    delete from smbms_provider
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.kgc.pojo.Provider" >
+    insert into smbms_provider (id, proCode, proName, 
+      proDesc, proContact, proPhone, 
+      proAddress, proFax, createdBy, 
+      creationDate, modifyDate, modifyBy
+      )
+    values (#{id,jdbcType=BIGINT}, #{procode,jdbcType=VARCHAR}, #{proname,jdbcType=VARCHAR}, 
+      #{prodesc,jdbcType=VARCHAR}, #{procontact,jdbcType=VARCHAR}, #{prophone,jdbcType=VARCHAR}, 
+      #{proaddress,jdbcType=VARCHAR}, #{profax,jdbcType=VARCHAR}, #{createdby,jdbcType=BIGINT}, 
+      #{creationdate,jdbcType=TIMESTAMP}, #{modifydate,jdbcType=TIMESTAMP}, #{modifyby,jdbcType=BIGINT}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.kgc.pojo.Provider" >
+    insert into smbms_provider
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="procode != null" >
+        proCode,
+      </if>
+      <if test="proname != null" >
+        proName,
+      </if>
+      <if test="prodesc != null" >
+        proDesc,
+      </if>
+      <if test="procontact != null" >
+        proContact,
+      </if>
+      <if test="prophone != null" >
+        proPhone,
+      </if>
+      <if test="proaddress != null" >
+        proAddress,
+      </if>
+      <if test="profax != null" >
+        proFax,
+      </if>
+      <if test="createdby != null" >
+        createdBy,
+      </if>
+      <if test="creationdate != null" >
+        creationDate,
+      </if>
+      <if test="modifydate != null" >
+        modifyDate,
+      </if>
+      <if test="modifyby != null" >
+        modifyBy,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=BIGINT},
+      </if>
+      <if test="procode != null" >
+        #{procode,jdbcType=VARCHAR},
+      </if>
+      <if test="proname != null" >
+        #{proname,jdbcType=VARCHAR},
+      </if>
+      <if test="prodesc != null" >
+        #{prodesc,jdbcType=VARCHAR},
+      </if>
+      <if test="procontact != null" >
+        #{procontact,jdbcType=VARCHAR},
+      </if>
+      <if test="prophone != null" >
+        #{prophone,jdbcType=VARCHAR},
+      </if>
+      <if test="proaddress != null" >
+        #{proaddress,jdbcType=VARCHAR},
+      </if>
+      <if test="profax != null" >
+        #{profax,jdbcType=VARCHAR},
+      </if>
+      <if test="createdby != null" >
+        #{createdby,jdbcType=BIGINT},
+      </if>
+      <if test="creationdate != null" >
+        #{creationdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifydate != null" >
+        #{modifydate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyby != null" >
+        #{modifyby,jdbcType=BIGINT},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.kgc.pojo.ProviderCriteria" resultType="java.lang.Integer" >
+    select count(*) from smbms_provider
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update smbms_provider
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=BIGINT},
+      </if>
+      <if test="record.procode != null" >
+        proCode = #{record.procode,jdbcType=VARCHAR},
+      </if>
+      <if test="record.proname != null" >
+        proName = #{record.proname,jdbcType=VARCHAR},
+      </if>
+      <if test="record.prodesc != null" >
+        proDesc = #{record.prodesc,jdbcType=VARCHAR},
+      </if>
+      <if test="record.procontact != null" >
+        proContact = #{record.procontact,jdbcType=VARCHAR},
+      </if>
+      <if test="record.prophone != null" >
+        proPhone = #{record.prophone,jdbcType=VARCHAR},
+      </if>
+      <if test="record.proaddress != null" >
+        proAddress = #{record.proaddress,jdbcType=VARCHAR},
+      </if>
+      <if test="record.profax != null" >
+        proFax = #{record.profax,jdbcType=VARCHAR},
+      </if>
+      <if test="record.createdby != null" >
+        createdBy = #{record.createdby,jdbcType=BIGINT},
+      </if>
+      <if test="record.creationdate != null" >
+        creationDate = #{record.creationdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.modifydate != null" >
+        modifyDate = #{record.modifydate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="record.modifyby != null" >
+        modifyBy = #{record.modifyby,jdbcType=BIGINT},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update smbms_provider
+    set id = #{record.id,jdbcType=BIGINT},
+      proCode = #{record.procode,jdbcType=VARCHAR},
+      proName = #{record.proname,jdbcType=VARCHAR},
+      proDesc = #{record.prodesc,jdbcType=VARCHAR},
+      proContact = #{record.procontact,jdbcType=VARCHAR},
+      proPhone = #{record.prophone,jdbcType=VARCHAR},
+      proAddress = #{record.proaddress,jdbcType=VARCHAR},
+      proFax = #{record.profax,jdbcType=VARCHAR},
+      createdBy = #{record.createdby,jdbcType=BIGINT},
+      creationDate = #{record.creationdate,jdbcType=TIMESTAMP},
+      modifyDate = #{record.modifydate,jdbcType=TIMESTAMP},
+      modifyBy = #{record.modifyby,jdbcType=BIGINT}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.kgc.pojo.Provider" >
+    update smbms_provider
+    <set >
+      <if test="procode != null" >
+        proCode = #{procode,jdbcType=VARCHAR},
+      </if>
+      <if test="proname != null" >
+        proName = #{proname,jdbcType=VARCHAR},
+      </if>
+      <if test="prodesc != null" >
+        proDesc = #{prodesc,jdbcType=VARCHAR},
+      </if>
+      <if test="procontact != null" >
+        proContact = #{procontact,jdbcType=VARCHAR},
+      </if>
+      <if test="prophone != null" >
+        proPhone = #{prophone,jdbcType=VARCHAR},
+      </if>
+      <if test="proaddress != null" >
+        proAddress = #{proaddress,jdbcType=VARCHAR},
+      </if>
+      <if test="profax != null" >
+        proFax = #{profax,jdbcType=VARCHAR},
+      </if>
+      <if test="createdby != null" >
+        createdBy = #{createdby,jdbcType=BIGINT},
+      </if>
+      <if test="creationdate != null" >
+        creationDate = #{creationdate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifydate != null" >
+        modifyDate = #{modifydate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="modifyby != null" >
+        modifyBy = #{modifyby,jdbcType=BIGINT},
+      </if>
+    </set>
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.kgc.pojo.Provider" >
+    update smbms_provider
+    set proCode = #{procode,jdbcType=VARCHAR},
+      proName = #{proname,jdbcType=VARCHAR},
+      proDesc = #{prodesc,jdbcType=VARCHAR},
+      proContact = #{procontact,jdbcType=VARCHAR},
+      proPhone = #{prophone,jdbcType=VARCHAR},
+      proAddress = #{proaddress,jdbcType=VARCHAR},
+      proFax = #{profax,jdbcType=VARCHAR},
+      createdBy = #{createdby,jdbcType=BIGINT},
+      creationDate = #{creationdate,jdbcType=TIMESTAMP},
+      modifyDate = #{modifydate,jdbcType=TIMESTAMP},
+      modifyBy = #{modifyby,jdbcType=BIGINT}
+    where id = #{id,jdbcType=BIGINT}
+  </update>
+</mapper>
