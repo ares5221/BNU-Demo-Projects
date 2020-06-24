@@ -1,0 +1,633 @@
+!!
+
+2019��NLP����ع�
+
+!!
+
+2019年NLP领域回顾
+
+原⽂标题：NLP Year in Review — 2019
+
+原⽂作者：Elvis Saravia
+
+原⽂链接：https://medium.com/dair-ai/nlp-year-in-review-2019-fb8d523bcb19
+
+以下为中⽂翻译：
+
+2019年是NLP领域让⼈⾮常印象深刻的⼀年。在(cid:3784)中，我想要分享在 2019年在机器学习和NLP领域最
+重要的亮点。我主要关注NLP领域，但是我也将重点介绍⼀些与AI相关的有趣故事。标题没有进⾏特定
+的排序。⽂章可能包含出版物、⼯程⼯作、年度报告、发布的教育资源等等。
+
+提醒~⽂章⾮常⻓，所以在你开始阅读之前，建议将(cid:3784)章收藏。已经在⽂末分享了(cid:3784)的 PDF版本。
+
+⽬录
+
+出版物
+
+ML/NLP创新与社会
+ML/NLP⼯具与数据集
+
+⽂章与博客
+⼈⼯智能伦理
+
+ML/NLP教育
+
+出版物 
+
+⾕歌AI团队发布了ALBERT，它是BERT的精简版本，⽤于⾃监督学习上下⽂语⾔表示。主要的提升
+是减少了冗余并更有效地分配模型的容量。该⽅法提⾼了12个NLP任务的最佳性能。
+
+ALBERT: A LITE BERT FOR SELF-SUPERVISED LEARNING OF LANGUAGE
+REPRESENTATIONS
+
+https://arxiv.org/pdf/1909.11942.pdf
+
+https://ai.googleblog.com/2019/12/albert-lite-bert-for-self-supervised.html
+
+BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding
+
+https://arxiv.org/abs/1810.04805
+
+今年早些时候，NVIDIA的研究⼈员发表了⼀篇知名论⽂ (coined StyleGAN)，提出了⼀种⽤于GAN
+的替代⽣成器架构，⽤于⻛格迁移（style transfer）。这是后续⼯作，其中重点在于改进，例如
+重新设计⽣成器归⼀化过程。
+
+A Style-Based Generator Architecture for Generative Adversarial Networks
+
+https://arxiv.org/pdf/1812.04948.pdf
+
+Analyzing and Improving the Image Quality of StyleGAN
+
+https://arxiv.org/pdf/1912.04958v1.pdf
+
+上排显示⽬标图像，下排显示合成图像。-- 源论⽂
+
+今年我最喜欢的论⽂之⼀是code2seq，这是⼀种从结构化代码表示中⽣成⾃然语⾔序列的⽅法。
+这样的研究可以应⽤⾃动化代码摘要和⽂档之类的任务。
+
+CODE2SEQ: GENERATING SEQUENCES FROM STRUCTURED REPRESENTATIONS OF
+CODE
+
+https://code2seq.org/
+
+https://openreview.net/pdf?id=H1gKYo09tX
+
+曾经想过是否有可能从⽣物医学⽂本挖掘训练⼀个⽣物医学语⾔模型？答案是BioBERT，这是⼀种
+⽤于从⽣物医学⽂献中抽取重要信息的上下⽂⽅法。
+
+BioBERT: a pre-trained biomedical language representation model for biomedical text
+mining
+
+https://arxiv.org/abs/1901.08746
+
+在BERT发布后，Facebook研究⼈员发表了RoBERTa，⼀种优化提升BERT的新⽅法，并在各种
+NLP基准测试上取得最优结果。
+
+RoBERTa: A Robustly Optimized BERT Pretraining Approach
+
+https://ai.facebook.com/blog/roberta-an-optimized-method-for-pretraining-self-superv
+ised-nlp-systems/
+
+https://arxiv.org/abs/1907.11692
+
+来⾃Facebook AI的研究⼈员最近也发表了基于all-attention层的⽅法来提升Transformer语⾔模型
+
+的效率。这个研究组的更多⼯作包含⼀种⽅法来教AI系统如何使⽤⾃然语⾔进⾏规划。
+
+Augmenting Self-attention with Persistent Memory
+
+https://ai.facebook.com/blog/making-transformer-networks-simpler-and-more-eﬃcien
+t/
+
+https://arxiv.org/pdf/1907.01470.pdf
+
+Hierarchical Decision Making by Generating and Following Natural Language
+Instructions
+
+https://ai.facebook.com/blog/-teaching-ai-to-plan-using-language-in-a-new-open-sourc
+e-strategy-game/
+
+https://arxiv.org/abs/1906.00744
+
+all-attention层 -- 原论⽂
+
+可解释性仍然是ML和NLP领域重要的主题。这篇论⽂提供了有关可解释性、分类规则和未来研究
+机会的⼯作的全⾯概述。
+
+Explainable Artiﬁcial Intelligence (XAI): Concepts, Taxonomies, Opportunities and
+Challenges toward Responsible AI
+
+https://arxiv.org/abs/1910.10045
+
+Sebastian Ruder发表了他关于⾃然语⾔处理的神经⽹络迁移学习的论⽂。
+
+Neural Transfer Learning for Natural Language Processing
+
+https://ruder.io/thesis/
+
+https://ruder.io/thesis/neural_transfer_learning_for_nlp.pdf
+
+⼀组研究⼈员开发⼀种⽅法⽤于对话上下⽂中进⾏情感识别。这种⽅法可以为情感对话⽣成铺平道
+路。另外⼀个相关⼯作是被称为DialogueGCN的GNN⽅法，被⽤来检测对话中的情绪。这项研究
+论⽂也提供了代码实现。
+
+DialogueGCN: A Graph Convolutional Neural Network for Emotion Recognition in
+Conversation
+
+https://www.aclweb.org/anthology/D19-1015.pdf
+
+https://github.com/SenticNet/conv-emotion/tree/master/DialogueGCN
+
+⾕歌AI Quantum团队在《⾃然》杂志上发表了⼀篇论⽂，声称他们已经开发出了⼀种量⼦计算
+机，这种计算机⽐世界最⼤的超级计算机还要快。阅读他们的实验了解更多。
+
+Quantum supremacy using a programmable superconducting processor
+
+https://ai.googleblog.com/2019/10/quantum-supremacy-using-programmable.html
+
+https://www.nature.com/articles/s41586-019-1666-5
+
+如前所述，神经⽹络架构最需要⼤量改进的领域之⼀就是可解释性。该论⽂讨论了注意⼒的局限
+性，这种在上下⽂语⾔模型中进⾏解释的可靠⽅法。
+
+Attention is not not Explanation
+
+https://arxiv.org/abs/1908.04626
+
+神经逻辑机是⼀种神经-符号⽹络架构，它能够在归纳学习和逻辑推理⽅⾯做得很好。该模型在排
+序数组和寻找最短路径之类的任务上表现出⾊。
+
+Neural Logic Machines
+
+https://arxiv.org/abs/1904.11694
+
+神经逻辑机架构 -- 原论⽂
+
+这篇论⽂应⽤Transformer语⾔模型来抽取式和摘要式的神经⽹络⽂档摘要。
+
+On Extractive and Abstractive Neural Document Summarization with Transformer
+Language Models
+
+https://arxiv.org/abs/1909.03186
+
+研究⼈员开发了⼀种⽅法，其聚焦于使⽤⽐较来构建和训练ML模型。不需要⼤量的特征标签对，
+这种技术将图⽚与之前看到的图像进⾏⽐较来决定图⽚是否应该具有特定标签。
+
+Building Machine Learning Models via Comparisons
+
+https://blog.ml.cmu.edu/2019/03/29/building-machine-learning-models-via-compariso
+ns/
+
+Nelson Liu和其他⼈发表了⼀篇论⽂，讨论了诸如BERT和ELMo之类的经过预训练的
+
+contextualizers所捕获的语⾔知识的类型。
+
+Linguistic Knowledge and Transferability of Contextual Representations
+
+https://arxiv.org/abs/1903.08855
+
+XLNet是⼀种NLP预训练⽅法，该⽅法在20种任务中取得了提升，超过了BERT。我曾写过关于这
+个出⾊⼯作的总结。
+
+XLNet: Generalized Autoregressive Pretraining for Language Understanding
+
+https://arxiv.org/abs/1906.08237
+
+https://medium.com/dair-ai/xlnet-outperforms-bert-on-several-nlp-tasks-9ec867bb563
+b
+
+Deepmind的这项⼯作报告了⼀项⼴泛的经验研究的结果，该研究旨在评估适⽤于各种任务的语⾔
+理解模型。 这种⼴泛的分析对于更好地理解语⾔模型捕获的内容以提⾼其效率⾮常重要。
+
+Learning and Evaluating General Linguistic Intelligence
+
+https://arxiv.org/abs/1901.11373
+
+VisualBERT是⽤于建模视觉和语⾔任务（包括VQA和Flickr30K等）的简单⽽鲁棒的框架。这种⽅
+法利⽤了Transformer层的堆栈以及⾃注意，以对⻬⼀段⽂本和图像区域中的元素。
+
+VisualBERT: A Simple and Performant Baseline for Vision and Language
+
+https://arxiv.org/abs/1908.03557
+
+这项⼯作提供了详细的分析，⽐较了NLP迁移学习⽅法，撰写了NLP从业⼈员指南。
+
+To Tune or Not to Tune? Adapting Pretrained Representations to Diverse Tasks
+
+https://arxiv.org/abs/1903.05987
+
+Alex Wang和Kyunghyun提出了BERT的实现⽅法，它能够产⽣⾼质量、流畅的世代。这是⼀个
+
+Colab notebook可以进⾏尝试。
+
+BERT has a Mouth, and It Must Speak: BERT as a Markov Random Field Language
+Model
+
+https://arxiv.org/abs/1902.04094
+
+https://colab.research.google.com/drive/1MxKZGtQ9SSBjTK5ArsZ5LKhkztzg52RV
+
+Facebook研究⼈员发布了XLM的代码（PyTorch实现），该代码是⽤于跨语⾔模型预训练的模
+型。
+
+Cross-lingual Language Model Pretraining
+
+https://arxiv.org/abs/1901.07291
+
+https://github.com/facebookresearch/XLM
+
+这项⼯作对强化学习算法在神经机器翻译中的应⽤提供了全⾯的分析。
+
+""
+
+RL in NMT: the Good, the Bad and the Ugly
+
+https://www.cl.uni-heidelberg.de/statnlpgroup/blog/rl4nmt/
+
+这份发表在JAIR上的综述论⽂全⾯概述了跨语⾔单词嵌⼊模型的训练、评估和使⽤。
+
+A Survey of Cross-lingual Word Embedding Models
+
+https://jair.org/index.php/jair/article/view/11640
+
+Gradient发表了⼀篇出⾊的⽂章，详细介绍了强化学习的当前局限性，也为分层强化学习提供了⼀
+条可能的途径。 并且适时地，⼏个⼈发布了⼀套出⾊的教程，以开始进⾏强化学习。
+
+The Promise of Hierarchical Reinforcement Learning
+
+https://thegradient.pub/the-promise-of-hierarchical-reinforcement-learning/
+
+https://github.com/araﬃn/rl-tutorial-jnrr19/blob/master/1_getting_started.ipynb
+
+本论⽂提供了上下⽂词表示的简要介绍。
+
+Contextual Word Representations: A Contextual Introduction
+
+https://arxiv.org/abs/1902.06006
+
+ML/NLP创新与社会 
+
+机器学习已被应⽤来解决现实世界中的问题，但它也已经以有趣和创新的⽅式被应⽤。机器学习的创新
+与⼈⼯智能的任何其他研究领域⼀样重要，因为最终，我们希望构建能够帮助塑造我们的⽂化和社会的
+⼈⼯智能系统。
+
+2019年底，Gary Marcus和Yoshua Bengio就深度学习、符号AI和混合AI系统进⾏了辩论。
+
+斯坦福发布了2019年AI指数报告，该报告对AI的现状进⾏了全⾯的分析，可以⽤来更好地了解AI的
+总体进展。
+常识推理（Commonsense reasoning）仍然是研究的重要领域，因为我们旨在构建⼈⼯智能系
+统，该系统不仅能够对所提供的数据做出预测，⽽且能够理解并能够推理出这些决策。此类技术可
+⽤于对话式AI，其⽬的是使智能体能够与⼈进⾏更⾃然的对话。在与Nasrin Mostafazadeh的访谈
+中查看有关常识性推理和讲故事和语⾔理解等应⽤的讨论。您还可以查看有关如何利⽤语⾔模型进
+⾏常识推理的最新⽂章。
+
+激活图（Activation Atlases）是Google和Open AI的研究⼈员开发的⼀种技术，⽤于更好地理解
+
+和可视化神经⽹络神经元之间发⽣的相互作⽤。
+
+“InceptionV1视觉分类⽹络的激活图揭示了许多完全实现的功能，例如电⼦设备，建筑物，⻝物，动物
+的⽿朵，植物和⽔汪汪的背景。”-- 原⽹址
+
+观看由Geoﬀrey Hinton和Yann LeCun发表的图灵演讲（Turing Lecture），他们与Yoshua
+
+Bengio⼀起获得了今年的图灵奖。
+这篇论⽂讨论了通过机器学习应对⽓候变化。
+OpenAI发布了⼀份⼴泛的报告，讨论了语⾔模型的社会影响，涉及诸如技术的有益使⽤和潜在滥
+⽤之类的话题。
+情感分析（emotion analysis）继续在各种应⽤中使⽤。Mojiﬁer是⼀个很酷的项⽬，它可以查看
+图像，检测情感并⽤与检测到的情感匹配的表情符号替换⾯部。
+利⽤⼈⼯智能技术进⾏放射学的⼯作在今年也很流⾏。这是⼀篇该研究领域中趋势和观点的不错总
+结。纽约⼤学的研究⼈员还发布了⼀个基于Pytorch实现的深度神经⽹络，可提⾼放射线医师在乳
+腺癌筛查中的表现。这是⼀个称为MIMIC-CXR的主要数据集，其中包含胸部X射线和⽂字放射学报
+告的数据库。
+
+纽约时报为Karen Spark Jones写了⼀篇⽂章，以纪念她对NLP和Information Retrieval所做的开
+
+创性贡献。
+OpenAI Five成为第⼀个在电竞游戏中击败世界冠军的AI系统。
+
+全球AI⼈才报告提供了有关全球AI⼈才库和全球AI⼈才需求的详细报告。
+DeepMind团队提供了⼀个出⾊的播客，参与者可以在其中讨论与AI有关的最前沿的话题。在谈到
+AI的潜⼒时，Demis Hassabis接受了《经济学⼈》的采访，他谈到了⼀些未来派的想法，例如将
+AI⽤作⼈类思维的扩展，以潜在地找到重要科学问题的解决⽅案。
+今年还⻅证了ML在医疗保健领域的惊⼈发展。例如，⻢萨诸塞州的研究⼈员开发了⼀种AI系统，
+该系统能够与⼈类⼀样准确地发现脑出⾎。
+
+"由AI系统分析的脑部扫描。"
+
+Janelle Shane总结了⼀组“怪异”的实验，这些实验显示了如何以创造性的⽅式使⽤机器学习来进⾏
+有趣的实验。 有时，这是真正了解AI系统实际上在做什么和不在做什么的实验。 例如使⽤神经⽹
+络产⽣假蛇并讲笑话。
+
+Snake Species
+
+通过在TensorFlow之上构建的机器学习模型来学习寻找⾏星。
+OpenAI讨论了发布⼤规模⽆监督语⾔模型的意义（包括潜在的恶意⽤例）。
+
+这个Colab notebook 很好地介绍了如何使⽤Nucleus和TensorFlow进⾏“ DNA序列错误校正”。这
+
+是⼀篇有关深度学习架构⽤于探索DNA的详细⽂章。
+
+图⽚来源
+
+亚历⼭⼤·拉什（Alexander Rush）是哈佛⼤学NLP的研究员，他写了⼀篇重要的⽂章，涉及张量
+
+⚙
+
+问题以及当前的某些库如何暴露它们。他还继续讨论了有关带有命名索引的张量的建议。
+
+ML/NLP⼯具与数据集 
+
+在这⾥，我重点介绍⼀些软件和数据集，它们有助于NLP和ML的研究与⼯程。
+
+Hugging Face发布了⼀个流⾏的基于Pytorch的名称为pytorch-transformers的Transformer库。
+
+它使NLP从业⼈员和研究⼈员可以轻松使⽤最先进的通⽤体系结构，例如BERT，GPT-2和XLM等。
+如果您对如何使⽤pytorch-transformers感兴趣，可以从⼏个地⽅开始，但是我很喜欢Roberto
+Silveira的详细教程，其中展示了如何使⽤该库进⾏机器理解。
+
+原⽹址
+
+TensorFlow 2.0已发布，其中包含许多新功能。在此处阅读有关最佳实践的更多信息。
+
+FrançoisChollet还在⼀个Colab notebook对TensorFlow 2.0的新功能进⾏了⼴泛的概述。
+
+PyTorch 1.3发布了许多新功能，包括命名张量和其他前端改进。
+Allen AI研究院发布了Iconary，这是⼀个可以与⼈类玩Pictionary⻛格的游戏的AI系统。这项⼯作
+结合了视觉/语⾔学习系统和常识推理。他们还发布了⼀个新的常识推理benchmark，称为
+
+Abductive-NLI。
+
+spaCy发布了⼀个新库，将Transformer语⾔模型合并到⾃⼰的库中，以便能够提取特征并将其⽤
+
+于spaCy NLP pipelines中。这项⼯作建⽴在Hugging Face开发的流⾏的Transformers库的基础
+上。Maximilien Roberti还写了⼀篇不错的⽂章，介绍如何将fast.ai代码与pytorch-transformers
+
+结合使⽤。
+Facebook AI团队发布了PHYRE，这是物理推理的benchmark，旨在通过解决各种物理难题来测试
+AI系统的物理推理。
+
+图⽚来源
+
+StanfordNLP发布了StanfordNLP 0.2.0，这是⼀个⽤于⾃然语⾔分析的Python库。您可以对70多
+
+种不同的语⾔执⾏不同类型的语⾔分析，例如词义化和语⾳识别。
+GQA是⼀个视觉问答数据集，⽤于进⾏与视觉推理相关的研究。
+
+exBERT是⼀个可视化的交互式⼯具，⽤于探索Transformer语⾔模型的embeddings和
+
+attention。您可以在这⾥找到论⽂和演示。
+
+exBERT -- 原⽹址
+
+Distill发表了⼀篇关于如何可视化递归神经⽹络（RNN）中记忆的⽂章。
+Mathpix是⼀种⼯具，可让你为数学⽅程拍照，然后转换为latex版本。
+
+✍
+
+原⽹址
+
+Parl.ai 是⼀个平台，拥有许多流⾏的数据集，涉及与对话和对话式AI有关的所有⼯作。
+Uber研究⼈员发布了Ludwig，这是⼀种开源⼯具，允许⽤户仅⽤⼏⾏代码即可轻松训练和测试深
+度学习模型。整个想法是在训练和测试模型时避免任何代码。
+Google AI研究⼈员发布了“⾃然问题（Natural Questions）”，这是⽤于训练和评估开放域问题回
+答系统的⼤规模语料库。
+
+⽂章与博客 
+
+今年⻅证了数据科学作家和爱好者的爆炸式增⻓。这对我们的领域⾮常有益处，并⿎励了健康的讨论和
+学习。在这⾥，我列出了⼀些有趣且必看的⽂章和博客⽂章：
+
+Christian Perone为最⼤似然估计（MLE）和最⼤后验（MAP）提供了出⾊的介绍，这是了解如何
+估计模型参数的重要原理。
+中野礼⼀郎（Reiichiro Nakano）发表了⼀篇博⽂，讨论了具有对抗性鲁棒分类器的神经⽹络⻛格
+
+迁移。还提供了⼀个Colab notebook。
+
+赛义夫·穆罕默德（Saif M. Mohammad）撰写了⼀系列精彩的⽂章，讨论了ACL论⽂集的历时分
+析。
+
+“图表显示平均学术年龄，中位学术年龄和⼀段时间内AA⾸次出版商的百分⽐。” — 原⽂
+
+问题是：语⾔模型可以学习语法吗？使⽤结构探针，这项⼯作旨在表明可以使⽤上下⽂表示法和查
+找树结构的⽅法来实现。
+Andrej Karpathy写了⼀篇博客⽂章，总结了最佳实践和如何有效训练神经⽹络的秘诀。
+Google AI研究⼈员和其他研究⼈员合作，以提⾼对使⽤BERT模型的搜索的理解。像BERT这样的
+上下⽂⽅法⾜以理解搜索查询背后的意图。
+Rectiﬁed Adam（RAdam）是⼀种基于Adam优化器的新优化技术，可帮助改善AI架构。为了找到
+更好、更稳定的优化器，我们付出了许多努⼒，但作者声称将重点放在优化的其他⽅⾯，这些⽅⾯
+对于提供改进的收敛性同样重要。
+随着近来机器学习⼯具的⼤量涌现，关于如何实现能够解决实际问题的机器学习系统的讨论也很
+多。Chip Huyen写了有趣的⼀章，讨论机器学习系统设计，重点是诸如超参数调整
+
+（hyperparameter tuning）和数据管道（data pipeline）之类的主题。
+
+NVIDIA创造了通过数⼗亿个参数训练的最⼤语⾔模型的记录。
+Abigail See撰写了⼀篇出⾊的博客⽂章，内容涉及在为执⾏⾃然语⾔⽣成任务⽽开发的系统中，如
+何进⾏良好的对话。
+Google AI发布了两个⾃然语⾔对话数据集，其想法是使⽤更复杂和⾃然的对话数据集来改善数字
+助⼿等对话应⽤程序中的个性化。
+深度强化学习仍然是AI领域中讨论最⼴泛的主题之⼀，它甚⾄引起了⼼理学和神经科学领域的兴
+趣。阅读发表在《认知科学趋势》上的这篇⽂章，了解更多有关⼀些重点内容的信息。
+
+Samira Abner撰写了⼀篇出⾊的博客⽂章，总结了Transformers、胶囊⽹络（capsule
+
+networks）及其连接背后的主要构建模块。Adam Kosiorek还在基于堆栈胶囊的⾃动编码器（胶
+囊⽹络的⽆监督版本）上写了这幅⽂章，该编码器⽤于物体检测。
+
+图⽚原⽹址
+
+研究⼈员在Distill上发表了⼀篇互动⽂章，旨在展示对⾼斯过程的视觉探索。
+通过Distill上的⽂章，Augustus Odena呼吁研究⼈员解决有关GAN的⼏个重要的开放性问题。
+这是图卷积⽹络（GCN）的PyTorch实现，⽤于对垃圾邮件发送者和⾮垃圾邮件发送者进⾏分类。
+
+2019年的年初，VentureBeat发布了由Rumman Chowdury、Hilary Mason、Andrew Ng和Yan
+
+LeCun等专家做出的2019年预测清单 。检查⼀下，看看他们的预测是否正确。
+了解如何微调（ﬁnetune）BERT以执⾏多标签⽂本分类。
+由于BERT的流⾏，在过去的⼏个⽉中，许多研究⼈员开发了⼀些⽅法来“压缩” BERT，其思想是构
+建更快、更⼩且内存效率更⾼的原始版本。Mitchell A. Gordon总结了围绕此⽬标开发的压缩类型
+和⽅法。
+超级智能仍然是专家们争论的话题。这是⼀个重要的主题，需要对框架、策略和仔细观察有正确的
+理解。我发现这⼀系列有趣的综合⽂章（以K. Eric Drexler的技术报告的形式）对于理解有关超级
+智能的⼀些问题和考虑很有⽤。
+埃⾥克·张（Eric Jang）在⼀篇博客⽂章中介绍了元学习的概念，旨在建⽴和训练不仅预测效果好
+⽽且学习效果好的机器学习模型。
+
+Sebastian Ruder撰写的AAAI 2019重点总结。
+图神经⽹络（graph neural networks）今年受到了⼴泛的讨论。David Mack撰写了⼀篇不错的视
+
+觉⽂章，介绍了他们如何使⽤此技术并结合attention来执⾏最短路径计算。
+⻉叶斯（Bayesian）⽅法仍然是⼀个有趣的主题，尤其是如何将它们应⽤于神经⽹络以避免诸如
+过拟合（over-ﬁtting）之类的常⻅问题。这是Kumar Shridhar对该主题的建议读物清单。
+
+&&
+%%
+
+“以点估计为权重的⽹络 vs 以概率分布为权重的⽹络” -- 原论⽂
+
+⼈⼯智能伦理 
+
+伦理可能是今年⼈⼯智能系统中被讨论最多的⽅⾯之⼀，其中包括围绕偏⻅、公平和透明等⽅⾯的讨
+论。在本节中提供了有关该主题的有趣故事和论⽂的列表：
+
+题⽬为“减轻ML的影响差异是否需要处理差异吗？”的论⽂讨论了通过对真实数据集进⾏的实验应
+⽤不同的学习过程的后果。
+HuggingFace发表了⼀篇⽂章，讨论了在对话式AI的开源NLP技术下的道德规范。
+随着我们继续将基于AI的技术引⼊社会，能够量化伦理学在AI研究中的作⽤是⼀项重要的⼯作。本
+⽂对这些措施和“在领先的AI、机器学习和机器⼈技术中，与道德相关的研究的使⽤”进⾏了⼴泛的
+分析。
+
+在NAACL 2019上发表的这项⼯作讨论了去偏（debiasing）⽅法如何隐藏word embeddings中的
+
+性别偏⻅。
+请观看Zachary Lipton发表的论⽂“机器学习奖学⾦的麻烦趋势”。我也写了⼀篇有趣的论⽂总结，
+您可以在这⾥找到。
+加⾥·⻢库斯（Gary Marcus）和欧内斯特·戴维斯（Ernest Davis）发表了他们的书“重启⼈⼯智
+能：建⽴我们可以信赖的⼈⼯智能”。本书的主题是讨论实现鲁棒的⼈⼯智能必须采取的步骤。关
+于AI进步的话题，François Chollet也写了⼀篇令⼈印象深刻的论⽂，为更好地衡量智能提供了依
+据。
+看看安德鲁·特拉斯克（Andrew Trask）创建的有关差异化隐私，联合学习和加密AI等主题的
+Udacity课程。关于隐私主题，艾玛·蓝姆克（Emma Bluemke）撰写了⼀篇很棒的⽂章，讨论了如
+何在保护患者隐私的同时如何训练机器学习模型。
+在今年年初，Mariya Yao发布了⼀份涉及AI伦理的综合研究论⽂摘要清单。尽管论⽂参考清单来⾃
+2018年，但我相信它们今天仍然有意义。
+
+ML/NLP教育 
+
+在这⾥，我将列出⼀系列教育资源、作者和正在做⼀些出⾊⼯作的⼈们，向其他⼈介绍有关ML / NLP困
+难的概念/主题的知识：
+
+CMU发布了“NLP神经⽹络”课程的材料和课程提纲。
+
+Elvis Saravia和Soujanya Poria发布了⼀个名为NLP-Overview的项⽬，该项⽬旨在帮助学⽣和从
+
+业者获得应⽤于NLP的现代深度学习技术的简要概述，包括理论、算法、应⽤和最新成果-链接
+
+NLP Overview
+
+Microsoft Research Lab发布了有关数据科学基础的免费电⼦书，其主题从Markov Chain Monte
+Carlo到Random Graphs。
+
+“机器学习数学”是⼀本免费的电⼦书，介绍了机器学习中最重要的数学概念。它还包括⼀些描述机
+
+器学习部分的Jupyter notebook教程。Jean Gallier和Jocelyn Quaintance撰写了⼀本免费电⼦
+
+书，其中涵盖了机器学习中使⽤的数学概念。
+
+斯坦福⼤学发布“Natural Language Understanding”课程的视频播放列表。
+
+在学习⽅⾯，OpenAI汇总了有关如何继续学习和提⾼机器学习技能的⼤量建议。显然，他们的员
+⼯每天都使⽤这些⽅法来保持学习和扩展知识。
+
+图⽚原⽹址
+
+Adrian Rosebrock发布了⻓达81⻚的指南，介绍如何使⽤Python和OpenCV进⾏计算机视觉。
+艾⽶丽·本德（Emily M. Bender）和亚历克斯·拉斯卡⾥德斯（Alex Lascarides）出版了⼀本书，
+标题为“ Linguistic Fundamentals for NLP”。本书的主要思想是通过为语义（semantics）和语⽤
+
+学（pragmatics）提供适当的基础来讨论NLP领域中的“meaning”。
+
+埃拉德·哈赞（Elad Hazan）在“机器学习的优化”上发表了他的演讲笔记，旨在将机器训练作为具
+有数学和符号的优化问题进⾏介绍。Deeplearning.ai还发表了⼀篇很棒的⽂章，讨论了使⽤更直
+观和交互式的⽅法来优化神经⽹络中的参数。
+
+Andreas Mueller发布了“Applied Machine Learning”⼀⻔新课程的视频播放列表。
+Fast.ai发布了其新的MOOC，标题为“Deep Learning from the Foundations”。
+
+麻省理⼯学院发布了有关“深度学习⼊⻔”课程的所有视频和课程提纲。
+Chip Huyen在推特上发布了⼀系列令⼈印象深刻的免费在线课程，以开始使⽤机器学习。
+安德鲁·特拉斯克（Andrew Trask）出版了题为“ Grokking深度学习”的书。这本书是理解神经⽹络
+体系结构的基本组成部分的⼀个很好的起点。
+塞巴斯蒂安·拉施卡（Sebastian Raschka）上传了80份笔记本，介绍了如何实现不同的深度学习模
+
+型，如RNN和CNN。很棒的是，所有模型都在PyTorch和TensorFlow中实现。
+这是⼀个很棒的教程，深⼊了解TensorFlow的⼯作原理。这篇是Christian Perone为PyTorch写
+
+的。
+Fast.ai还发布了⼀个名为“ NLP简介”的课程，并附带了⼀个播放列表。主题范围从情感分析到主题
+
+建模再到Transformer。
+通过Xavier Bresson的演讲，了解⽤于分⼦⽣成（Molecular Generation）的图卷积神经⽹络
+（Graph Convolutional Neural Networks）。幻灯⽚可以在这⾥找到。这是⼀篇讨论如何预训练
+
+GNN的论⽂。
+在图⽹络的主题上，⼀些⼯程师使⽤它们来预测分⼦和晶体的特性。Google AI团队还发表了⼀篇
+出⾊的博客⽂章，解释了他们如何使⽤GNN进⾏⽓味预测。如果您对使⽤Graph Neural
+Networks感兴趣，这⾥是各种GNN及其应⽤的全⾯综述。
+这是有关⽆监督学习⽅法的视频的播放列表，例如约翰·霍普⾦斯⼤学的Rene Vidal的PCA。
+
+如果您有兴趣将预训练的TensorFlow模型转换为PyTorch，Thomas Wolf在此博客⽂章中进⾏了介
+
+绍。
+想了解⽣成式深度学习吗？⼤卫·福斯特（David Foster）写了⼀本很棒的书，教数据科学家如何
+应⽤GAN和编码器-解码器模型执⾏绘画、写作和⾳乐创作等任务。这是本书随附的官⽅代码库，
+其中包含TensorFlow代码。还有将这些代码转换为PyTorch的努⼒。
+
+这是⼀个包含代码块的Colab notebook，⽤于练习和学习因果推理（causal inference）概念，例
+
+如⼲预措施、反事实等。
+
+这是由Sebastian Ruder，Matthew Peters，Swabha Swayamdipta和Thomas Wolf提供的
+NAACL 2019教程“Transfer Learning in Natural Language Processing”的材料。他们还提供了随
+附的Google Colab notebook上⼿。
+
+Jay Alammar的另⼀篇很棒的博客⽂章，主题是数据表示。他还写了许多其他有趣的插图指南，包
+括GPT-2和BERT。彼得·布洛姆（Peter Bloem）还发表了⼀篇⾮常详细的博客⽂章，解释了构成
+
+Transformer的所有要素。
+
+基本self-attention的图示 -- 图⽚原⽹址
+
+这是Mihail Eric撰写的ACL 2019上NLP趋势的概述。⼀些主题包括将知识注⼊NLP体系结构、可解
+释性和减少偏⻅等。如果您有兴趣，这⾥还有⼀些概述：链接2和链接3。
+斯坦福⼤学发布了CS231n 2019版的完整课程⼤纲。
+
+David Abel为ICLR 2019发布了⼀系列说明。他也很⾼兴为NeurIPS 2019提供令⼈印象深刻的总
+
+结。
+这是⼀本⾮常出⾊的书，它为学习者提供了有关带笔记本的深度学习的正确介绍。
+
+图⽚原⽹址
+
+这是⼀篇BERT、ELMo和co.的插图指南。
+
+图⽚原⽹址
+
+Fast.ai发布了其2019版的“⾯向程序员的实⽤深度学习”课程。
+由Pieter Abbeel和其他⼈讲授的这⻔奇妙的课程，深⼊了解⽆监督学习。
+吉尔伯特·斯特朗（Gilbert Strang）出版了⼀本有关线性代数和神经⽹络的新书。
+加州理⼯学院（Caltech）为“机器学习基础”课程提供了完整的课程提纲、讲义幻灯⽚和视频播放
+列表。
+
+“ Scipy Lecture Notes”是⼀系列教程，教您如何掌握matplotlib、NumPy和SciPy等⼯具。
+
+这是有关理解⾼斯过程的优秀教程，教程提供了notebooks。
+
+这是⼀篇必读的⽂章，其中Lilian Weng深⼊探讨了通⽤语⾔模型，例如ULMFit、OpenAI GPT-2
+
+和BERT。
+
+Papers with Code是⼀个⽹站，显示精选的带有代码和最优结果的机器学习论⽂列表。
+克⾥斯托夫·莫纳尔（Christoph Molnar）发布了第⼀版“可解释性机器学习”，该书讲述了⽤于更
+好地解释机器学习算法的重要技术。
+⼤卫·班曼（David Bamman）发布了伯克利⼤学（UC Berkley）开设的⾃然语⾔处理课程的完整
+的课程⼤纲和幻灯⽚ 。
+
+伯克利发布其“ Applied NLP”课程的所有资料。
+
+Aerin Kim是Microsoft的⾼级研究⼯程师，撰写有关应⽤数学和深度学习的⽂章。主题包括条件独
+⽴性、伽⻢分布、复杂度（perplexity）等。
+Tai-Danae Bradley在此博⽂中讨论了如何考虑矩阵和张量的⽅法。本⽂以令⼈难以置信的视觉效
+果编写，有助于更好地理解在矩阵上执⾏的某些转换和操作。
+
+原⽹址
+
+结语
+
+希望您觉得这些链接有⽤。 祝您2020年成功健康！
+
+由于假期，我没有太多机会对⽂章进⾏校对，因此欢迎任何反馈或更正！
+
+>> 英⽂原⽂PDF版本 <<
+

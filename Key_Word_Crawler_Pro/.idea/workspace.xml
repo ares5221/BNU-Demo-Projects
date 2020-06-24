@@ -1,0 +1,753 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="244e7caf-bd44-4180-9814-9c03f437bb79" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/AutoCrowerByKeyWords$test_find_all_html_label.coverage" NAME="test_find_all_html_label Coverage Results" MODIFIED="1574321430369" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_clower_v2" />
+    <SUITE FILE_PATH="coverage/Key_Word_Crower_Demo$test_rar.coverage" NAME="test_rar Coverage Results" MODIFIED="1578905767249" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test/test_rar" />
+    <SUITE FILE_PATH="coverage/AutoCrowerByKeyWords$clower_data.coverage" NAME="clower_data Coverage Results" MODIFIED="1574216409557" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_clower_v2" />
+    <SUITE FILE_PATH="coverage/Key_Word_Crower_Demo$test_pdf.coverage" NAME="test_pdf Coverage Results" MODIFIED="1578905628448" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test/testpdf" />
+    <SUITE FILE_PATH="coverage/AutoCrowerByKeyWords$clower_main.coverage" NAME="clower_main Coverage Results" MODIFIED="1574848459279" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_clower_v2" />
+    <SUITE FILE_PATH="coverage/Key_Word_Crawler_Pro$sss.coverage" NAME="sss Coverage Results" MODIFIED="1592797739970" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/AutoCrowerByKeyWords$tikakaka.coverage" NAME="tikakaka Coverage Results" MODIFIED="1574230730562" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_clower_v2" />
+    <SUITE FILE_PATH="coverage/Key_Word_Crower_Demo$test_tika.coverage" NAME="test_tika Coverage Results" MODIFIED="1578905196261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test/test_tika" />
+    <SUITE FILE_PATH="coverage/Key_Word_Crower_Demo$clower_main_pro.coverage" NAME="clower_main_pro Coverage Results" MODIFIED="1574991310513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_clower_v2" />
+    <SUITE FILE_PATH="coverage/AutoCrowerByKeyWords$questionCrower.coverage" NAME="questionCrower Coverage Results" MODIFIED="1574043975613" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/question_crower/questionZuJuan" />
+    <SUITE FILE_PATH="coverage/AutoCrowerByKeyWords$download_zhongguojiaoyu_file.coverage" NAME="download_zhongguojiaoyu_file Coverage Results" MODIFIED="1574989574604" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_clower_v2" />
+    <SUITE FILE_PATH="coverage/Key_Word_Crawler_Pro$crawler_main.coverage" NAME="crawler_main Coverage Results" MODIFIED="1592966664736" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/AutoCrowerByKeyWords$main.coverage" NAME="main Coverage Results" MODIFIED="1574905525456" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_clower" />
+    <SUITE FILE_PATH="coverage/AutoCrowerByKeyWords$text_analysis.coverage" NAME="text_analysis Coverage Results" MODIFIED="1574653604163" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_clower_v2" />
+    <SUITE FILE_PATH="coverage/Key_Word_Crawler_Pro$read_keywords.coverage" NAME="read_keywords Coverage Results" MODIFIED="1592797742420" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/utils" />
+    <SUITE FILE_PATH="coverage/Key_Word_Crower_Demo$test_zip.coverage" NAME="test_zip Coverage Results" MODIFIED="1578901849104" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test/testzip" />
+    <SUITE FILE_PATH="coverage/AutoCrowerByKeyWords$test.coverage" NAME="test Coverage Results" MODIFIED="1574903323145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/test_func" />
+    <SUITE FILE_PATH="coverage/Key_Word_Crower_Demo$pytest_in_test_tika_py.coverage" NAME="pytest in test_tika.py Coverage Results" MODIFIED="1578905190486" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test/test_tika" />
+    <SUITE FILE_PATH="coverage/Key_Word_Crower_Demo$pytest_in_test_zip_py.coverage" NAME="pytest in test_zip.py Coverage Results" MODIFIED="1578901833939" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test/testzip" />
+    <SUITE FILE_PATH="coverage/AutoCrowerByKeyWords$clower_main_pro.coverage" NAME="clower_main_pro Coverage Results" MODIFIED="1574990471868" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_clower_v2" />
+    <SUITE FILE_PATH="coverage/AutoCrowerByKeyWords$download_file.coverage" NAME="download_file Coverage Results" MODIFIED="1574662985889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_clower_v2" />
+    <SUITE FILE_PATH="coverage/Key_Word_Crower_Demo$testrar.coverage" NAME="testrar Coverage Results" MODIFIED="1578901560397" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test" />
+    <SUITE FILE_PATH="coverage/Key_Word_Crawler_Pro$clower_main_pro.coverage" NAME="clower_main_pro Coverage Results" MODIFIED="1592917468738" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Key_Word_Crower_Demo$clower_main_pro__1_.coverage" NAME="clower_main_pro (1) Coverage Results" MODIFIED="1575881636232" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/AutoCrowerByKeyWords$download_xueke_file.coverage" NAME="download_xueke_file Coverage Results" MODIFIED="1574913009431" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_clower_v2" />
+    <SUITE FILE_PATH="coverage/Key_Word_Crower_Demo$pytest_in_test_pdf_py.coverage" NAME="pytest in test_pdf.py Coverage Results" MODIFIED="1578905559178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test/testpdf" />
+    <SUITE FILE_PATH="coverage/Key_Word_Crower_Demo$test_tgz.coverage" NAME="test_tgz Coverage Results" MODIFIED="1578906682042" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/test/test_tgz" />
+    <SUITE FILE_PATH="coverage/AutoCrowerByKeyWords$utils.coverage" NAME="utils Coverage Results" MODIFIED="1574238140748" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/auto_clower_v2" />
+    <SUITE FILE_PATH="coverage/Key_Word_Crawler_Pro$text_analysis.coverage" NAME="text_analysis Coverage Results" MODIFIED="1592962989300" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Key_Word_Crawler_Pro$download_xueke_file.coverage" NAME="download_xueke_file Coverage Results" MODIFIED="1592908716082" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/crawler_main.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="133">
+              <caret line="22" column="35" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="35" />
+              <folding>
+                <element signature="e#45#83#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/download_haokejian_file.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="212">
+              <caret line="69" column="73" selection-start-line="66" selection-start-column="16" selection-end-line="69" selection-end-column="73" />
+              <folding>
+                <element signature="e#45#60#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/download_zhongguojiaoyu_file.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="83">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
+              <folding>
+                <element signature="e#45#58#0" expanded="true" />
+                <element signature="e#3642#5027#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>下一页</find>
+      <find>login</find>
+      <find>您好</find>
+      <find>初中生物北师大版七年级上第3单元 生物圈中的绿色植物第5章 绿色开花植物的生活方式5.11光合作用(共25张PPT)</find>
+      <find>mkey</find>
+      <find>下载</find>
+      <find>login_jiaoyu</find>
+      <find>download_with_requests</find>
+      <find>download_with_wget</find>
+      <find>download_file_num</find>
+      <find>chrome</find>
+      <find>Chrome</find>
+      <find>time</find>
+      <find>download_xueke_file_use_middle_website</find>
+      <find>v2</find>
+      <find />
+      <find>clearfix list-item</find>
+      <find>btnSoftDownload</find>
+      <find>quote</find>
+      <find>phrase_pdf</find>
+      <find>健康</find>
+      <find>phrase_ppt</find>
+      <find>shutil</find>
+      <find>get_content_type</find>
+      <find>content</find>
+      <find>download_file_use_middle_website</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/question_crower/questionZuJuan/questionCrower.py" />
+        <option value="$PROJECT_DIR$/auto_clower/main.py" />
+        <option value="$PROJECT_DIR$/auto_clower_v2/clower_data.py" />
+        <option value="$PROJECT_DIR$/auto_clower_v2/tikakaka.py" />
+        <option value="$PROJECT_DIR$/auto_clower_v2/utils.py" />
+        <option value="$PROJECT_DIR$/auto_clower_v2/test_find_all_html_label.py" />
+        <option value="$PROJECT_DIR$/auto_clower_v2/ssssss.py" />
+        <option value="$PROJECT_DIR$/auto_clower_v2/text_analysis.py" />
+        <option value="$PROJECT_DIR$/auto_clower_v2/clower_main.py" />
+        <option value="$PROJECT_DIR$/auto_clower_v2/download_file.py" />
+        <option value="$PROJECT_DIR$/test_func/test.py" />
+        <option value="$PROJECT_DIR$/auto_clower_v2/download_xueke_file.py" />
+        <option value="$PROJECT_DIR$/test_func/ss.json" />
+        <option value="$PROJECT_DIR$/auto_clower_v2/download_zhongguojiaoyu_file.py" />
+        <option value="$PROJECT_DIR$/auto_clower_v2/clower_main_pro.py" />
+        <option value="$PROJECT_DIR$/src/download_gaokao_file.py" />
+        <option value="$PROJECT_DIR$/src/clower_main_pro.py" />
+        <option value="$PROJECT_DIR$/src/test/testrar.py" />
+        <option value="$PROJECT_DIR$/src/test/testzip/test_zip.py" />
+        <option value="$PROJECT_DIR$/src/test/test_tika/test_tika.py" />
+        <option value="$PROJECT_DIR$/src/test/testpdf/test_pdf.py" />
+        <option value="$PROJECT_DIR$/src/test/test_rar/test_rar.py" />
+        <option value="$PROJECT_DIR$/src/test/test_tgz/test_tgz.py" />
+        <option value="$PROJECT_DIR$/src/test/test_pdf/test_pdf.py" />
+        <option value="$PROJECT_DIR$/src/sss.py" />
+        <option value="$PROJECT_DIR$/src/ss.txt" />
+        <option value="$PROJECT_DIR$/src/utils/read_keywords.py" />
+        <option value="$PROJECT_DIR$/src/utils.py" />
+        <option value="$PROJECT_DIR$/docx/result.json" />
+        <option value="$PROJECT_DIR$/src/download_xueke_file.py" />
+        <option value="$PROJECT_DIR$/src/crawler_main.py" />
+        <option value="$PROJECT_DIR$/src/download_haokejian_file.py" />
+        <option value="$PROJECT_DIR$/src/download_file.py" />
+        <option value="$PROJECT_DIR$/src/text_analysis.py" />
+        <option value="$PROJECT_DIR$/src/download_zhongguojiaoyu_file.py" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="380" />
+    <option name="y" value="5" />
+    <option name="width" value="1020" />
+    <option name="height" value="766" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Key_Word_Crawler_Pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Key_Word_Crawler_Pro" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Key_Word_Crawler_Pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Key_Word_Crawler_Pro" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Key_Word_Crawler_Pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Key_Word_Crawler_Pro" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler_data" type="462c0819:PsiDirectoryNode" />
+              <item name="source" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Key_Word_Crawler_Pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Key_Word_Crawler_Pro" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler_data" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Key_Word_Crawler_Pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Key_Word_Crawler_Pro" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler_data" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="不懂就要问" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Key_Word_Crawler_Pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Key_Word_Crawler_Pro" type="462c0819:PsiDirectoryNode" />
+              <item name="crawler_data" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="山行" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Key_Word_Crawler_Pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Key_Word_Crawler_Pro" type="462c0819:PsiDirectoryNode" />
+              <item name="docx" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Key_Word_Crawler_Pro" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Key_Word_Crawler_Pro" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Download\Key_Word_Crawler_Pro\src\utils" />
+      <recent name="G:\Download\Key_Word_Crower_Demo\src\test\test_rar" />
+      <recent name="G:\Download\AutoCrowerByKeyWords\data_v2\source\光合作用" />
+      <recent name="G:\Download\AutoCrowerByKeyWords\test_func" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Download\Key_Word_Crawler_Pro\crawler_data\source\花的学校" />
+      <recent name="G:\Download\Key_Word_Crawler_Pro\docx" />
+      <recent name="G:\Download\Key_Word_Crawler_Pro\src" />
+      <recent name="G:\Download\Key_Word_Crawler_Pro\src\drive2" />
+      <recent name="G:\Download\Key_Word_Crower_Demo\src\test" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.crawler_main">
+    <configuration name="clower_main_pro" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AutoCrowerByKeyWords" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/clower_main_pro.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="crawler_main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AutoCrowerByKeyWords" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/crawler_main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="download_xueke_file" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AutoCrowerByKeyWords" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/download_xueke_file.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="read_keywords" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AutoCrowerByKeyWords" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/utils" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/utils/read_keywords.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="text_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="AutoCrowerByKeyWords" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/text_analysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.crawler_main" />
+        <item itemvalue="Python.text_analysis" />
+        <item itemvalue="Python.clower_main_pro" />
+        <item itemvalue="Python.download_xueke_file" />
+        <item itemvalue="Python.read_keywords" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="244e7caf-bd44-4180-9814-9c03f437bb79" name="Default Changelist" comment="" />
+      <created>1574041127695</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574041127695</updated>
+      <workItem from="1574041129288" duration="83000" />
+      <workItem from="1574041235765" duration="5218000" />
+      <workItem from="1574046762163" duration="93691000" />
+      <workItem from="1574676057404" duration="2353000" />
+      <workItem from="1574753356818" duration="50684000" />
+      <workItem from="1574990745419" duration="15057000" />
+      <workItem from="1575247331000" duration="1195000" />
+      <workItem from="1575265848680" duration="6339000" />
+      <workItem from="1577693750244" duration="1728000" />
+      <workItem from="1578449546219" duration="1219000" />
+      <workItem from="1578465688296" duration="278000" />
+      <workItem from="1578900981798" duration="8467000" />
+      <workItem from="1590562119583" duration="4078000" />
+      <workItem from="1592796812677" duration="7845000" />
+      <workItem from="1592824325943" duration="45160000" />
+      <workItem from="1592917571485" duration="13330000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="pytest_in_test_zip_py - 2020.01.13 at 15h 50m 35s.xml">
+      <configuration name="pytest in test_zip.py" configurationId="tests" />
+    </history-entry>
+    <history-entry file="pytest_in_test_pdf_py - 2020.01.13 at 16h 52m 39s.xml">
+      <configuration name="pytest in test_pdf.py" configurationId="tests" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="256725000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="54" y="-8" width="1318" height="784" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.77931035" visible="true" weight="0.2583466" />
+      <window_info id="Structure" order="1" sideWeight="0.22068965" side_tool="true" weight="0.1836248" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3809524" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41474655" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.25893825" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32936078" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.32936078" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/question_crower/questionZuJuan/questionCrower.py</url>
+          <line>25</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/question_crower/questionZuJuan/questionCrower.py</url>
+          <line>127</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/clower_main_pro.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/download_zhongguojiaoyu_file.py</url>
+          <line>125</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/download_zhongguojiaoyu_file.py</url>
+          <line>133</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/text_analysis.py</url>
+          <line>67</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://E:/python/Lib/site-packages/pymysql/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="93" selection-start-line="93" selection-end-line="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/python/Lib/site-packages/wget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="488" column="31" selection-start-line="488" selection-start-column="28" selection-end-line="488" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_func/tika_test.py" />
+    <entry file="file://$PROJECT_DIR$/question_crower/questionZuJuan/ChromeDownload.py" />
+    <entry file="file://$PROJECT_DIR$/test_func/test_find_all_html_label.py" />
+    <entry file="file://$PROJECT_DIR$/auto_clower_v2/main.py" />
+    <entry file="file://$PROJECT_DIR$/data_v2/source/光合作用/湖南省2018-2019学年隆回县高一下学期期末考试语文试题.pdf.jpg" />
+    <entry file="file://$PROJECT_DIR$/auto_clower_v2/ssssss.py" />
+    <entry file="file://$PROJECT_DIR$/auto_clower/questionCrower.py" />
+    <entry file="file://$PROJECT_DIR$/test_func/11942738.html" />
+    <entry file="file://$PROJECT_DIR$/test_func/softdownload" />
+    <entry file="file://$PROJECT_DIR$/question_crower/questionZuJuan/questionCrower.py" />
+    <entry file="file://$PROJECT_DIR$/auto_clower_v2/clower_main.py" />
+    <entry file="file://$PROJECT_DIR$/test_func/action" />
+    <entry file="file://$PROJECT_DIR$/test_func/test.py" />
+    <entry file="file://$PROJECT_DIR$/auto_clower/main.py" />
+    <entry file="file://E:/python/Lib/site-packages/urllib3/connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="158" selection-start-line="158" selection-end-line="158" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_func/ss.json" />
+    <entry file="file://E:/python/Lib/site-packages/selenium/webdriver/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://E:/python/Lib/site-packages/selenium/webdriver/remote/webdriver.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="951" selection-start-line="951" selection-end-line="951" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/test_zip/test_zip.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/test_tika/test_tika.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="114">
+          <caret line="6" column="46" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/test_rar/new/testrar.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/test_pdf/test_pdf.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="4" column="31" selection-start-line="4" selection-start-column="31" selection-end-line="4" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/test_rar/test_rar.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="57">
+          <caret line="3" selection-start-line="3" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/test_tgz/test_tgz.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/download_gaokao_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="22" column="53" selection-start-line="22" selection-start-column="53" selection-end-line="22" selection-end-column="53" />
+          <folding>
+            <element signature="e#45#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/keywords.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="326">
+          <caret line="47" column="7" selection-start-line="47" selection-start-column="7" selection-end-line="47" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils/read_keywords.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawler_data/source/花的学校/37502/all.txt" />
+    <entry file="file://E:/python/Lib/urllib/parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-69">
+          <caret line="746" column="4" selection-start-line="746" selection-start-column="4" selection-end-line="746" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/python/Lib/shutil.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="120" selection-start-line="120" selection-end-line="120" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/crawler_data/supplement_data/supplement_info.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1261">
+          <caret line="27" column="36" selection-start-line="27" selection-start-column="36" selection-end-line="27" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/utils.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1121">
+          <caret line="59" selection-start-line="59" selection-end-line="59" />
+          <folding>
+            <element signature="e#45#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/python/Lib/site-packages/selenium/webdriver/remote/switch_to.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="54" selection-start-line="54" selection-end-line="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/docx/result.json" />
+    <entry file="file://E:/python/Lib/site-packages/selenium/webdriver/remote/errorhandler.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="241" selection-start-line="241" selection-end-line="241" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/download_xueke_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="132" column="30" selection-start-line="132" selection-start-column="30" selection-end-line="132" selection-end-column="30" />
+          <folding>
+            <element signature="e#45#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/python/Lib/site-packages/requests/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/python/Lib/site-packages/requests/adapters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="515" selection-start-line="515" selection-end-line="515" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/clower_main_pro.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
+          <folding>
+            <element signature="e#45#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/download_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="81" column="42" lean-forward="true" selection-start-line="81" selection-start-column="42" selection-end-line="81" selection-end-column="42" />
+          <folding>
+            <element signature="e#45#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/text_analysis.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="140" column="4" selection-end-line="362" />
+          <folding>
+            <element signature="e#45#54#0" expanded="true" />
+            <element signature="e#2205#3144#0" />
+            <element signature="e#3213#3828#0" />
+            <element signature="e#6018#7216#0" />
+            <element signature="e#7265#7752#0" />
+            <element signature="e#7786#8487#0" />
+            <element signature="e#8594#9751#0" />
+            <marker date="1592964847460" expanded="true" signature="3847:4047" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/download_haokejian_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="212">
+          <caret line="69" column="73" selection-start-line="66" selection-start-column="16" selection-end-line="69" selection-end-column="73" />
+          <folding>
+            <element signature="e#45#60#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/crawler_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="35" />
+          <folding>
+            <element signature="e#45#83#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/download_zhongguojiaoyu_file.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <element signature="e#45#58#0" expanded="true" />
+            <element signature="e#3642#5027#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
