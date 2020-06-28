@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4d705ab8-6b2a-4911-937f-803ed893f864" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/Moral_Education_FQA$mainServer.coverage" NAME="mainServer Coverage Results" MODIFIED="1590398633717" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Moral_Education_FQA$book_data_clean.coverage" NAME="book_data_clean Coverage Results" MODIFIED="1589881865241" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/preprocess_data/book_data_process" />
+    <SUITE FILE_PATH="coverage/Moral_Education_FQA$web_data_clean.coverage" NAME="web_data_clean Coverage Results" MODIFIED="1589872333751" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/preprocess_data/web_data_process" />
+    <SUITE FILE_PATH="coverage/Moral_Education_FQA$bertClient.coverage" NAME="bertClient Coverage Results" MODIFIED="1592189302356" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Moral_Education_FQA$scripy_main__1_.coverage" NAME="scripy_main (1) Coverage Results" MODIFIED="1590629894708" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/preprocess_data/scrapy_data_process/scrapy_src/seewww" />
+    <SUITE FILE_PATH="coverage/Moral_Education_FQA$scripy_seewww_part2.coverage" NAME="scripy_seewww_part2 Coverage Results" MODIFIED="1590635496684" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/preprocess_data/scrapy_data_process/scrapy_src/seewww" />
+    <SUITE FILE_PATH="coverage/Moral_Education_FQA$test.coverage" NAME="test Coverage Results" MODIFIED="1591083851493" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/preprocess_data/scrapy_data_process" />
+    <SUITE FILE_PATH="coverage/Moral_Education_FQA$forum_data_clean.coverage" NAME="forum_data_clean Coverage Results" MODIFIED="1589870183388" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/preprocess_data/forum_data_process" />
+    <SUITE FILE_PATH="coverage/Moral_Education_FQA$book_data_phrase.coverage" NAME="book_data_phrase Coverage Results" MODIFIED="1590498858901" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/preprocess_data/book_data_process" />
+    <SUITE FILE_PATH="coverage/Moral_Education_FQA$formate_docx.coverage" NAME="formate_docx Coverage Results" MODIFIED="1590495886824" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/preprocess_data/book_data_process" />
+    <SUITE FILE_PATH="coverage/Moral_Education_FQA$scripy_seewww_part1.coverage" NAME="scripy_seewww_part1 Coverage Results" MODIFIED="1590635493445" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/preprocess_data/scrapy_data_process/scrapy_src/seewww" />
+    <SUITE FILE_PATH="coverage/Moral_Education_FQA$QAMainServer.coverage" NAME="QAMainServer Coverage Results" MODIFIED="1592284444505" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src" />
+    <SUITE FILE_PATH="coverage/Moral_Education_FQA$scripy_main.coverage" NAME="scripy_main Coverage Results" MODIFIED="1590594097359" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/preprocess_data/scrapy_data_process/scrapy_src/bzrzy" />
+    <SUITE FILE_PATH="coverage/Moral_Education_FQA$step_two_data_convet_bert_vector.coverage" NAME="step_two_data_convet_bert_vector Coverage Results" MODIFIED="1591844531319" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/preprocess_data" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/preprocess_data/step_two_data_convet_bert_vector.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="456">
+              <caret line="29" column="64" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/bertClient.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
+              <folding>
+                <element signature="e#45#54#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/data/moral_fqa_data.csv">
+          <provider editor-type-id="csv-table-editor">
+            <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+          </provider>
+          <provider selected="true" editor-type-id="csv-text-editor">
+            <state relative-caret-position="1089">
+              <caret line="311" column="46" selection-start-line="311" selection-start-column="46" selection-end-line="311" selection-end-column="46" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/QAMainServer.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+              <folding>
+                <element signature="e#45#68#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>que_id_dict</find>
+      <find>？</find>
+      <find>问题来源于</find>
+      <find>问题</find>
+      <find>que_ans_list_dict</find>
+      <find>path</find>
+      <find>[P]</find>
+      <find>[</find>
+      <find>time</find>
+      <find>[]</find>
+      <find>谈恋爱</find>
+      <find>沉迷游戏</find>
+      <find>学术爱睡觉</find>
+      <find>打架</find>
+      <find>偷东西</find>
+      <find>如何教育</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/raw_data/README.md" />
+        <option value="$PROJECT_DIR$/preprocess_data/forum_data_process/forum_data_clean.py" />
+        <option value="$PROJECT_DIR$/preprocess_data/web_data_process/web_data_clean.py" />
+        <option value="$PROJECT_DIR$/preprocess_data/book_data_process/book_data_clean.py" />
+        <option value="$PROJECT_DIR$/preprocess_data/forum_data_process/forum_data_pro.csv" />
+        <option value="$PROJECT_DIR$/src/mainServer.py" />
+        <option value="$PROJECT_DIR$/preprocess_data/book_data_process/formate_docx.py" />
+        <option value="$PROJECT_DIR$/preprocess_data/book_data_process/book_data_phrase.py" />
+        <option value="$PROJECT_DIR$/preprocess_data/scrapy_data_process/scrapy_src/bzrzy/scripy_main.py" />
+        <option value="$PROJECT_DIR$/preprocess_data/scrapy_data_process/scrapy_src/seewww/scripy_main.py" />
+        <option value="$PROJECT_DIR$/preprocess_data/scrapy_data_process/scrapy_src/seewww/scripy_seewww_part2.py" />
+        <option value="$PROJECT_DIR$/preprocess_data/scrapy_data_process/scrapy_src/seewww/scripy_seewww_part1.py" />
+        <option value="$PROJECT_DIR$/preprocess_data/scrapy_data_process/test.py" />
+        <option value="$PROJECT_DIR$/preprocess_data/forum_data_process/forum_data.csv" />
+        <option value="$PROJECT_DIR$/preprocess_data/book_data_process/book_data.csv" />
+        <option value="$PROJECT_DIR$/preprocess_data/step_two_data_convet_bert_vector.py" />
+        <option value="$PROJECT_DIR$/src/bertClient.py" />
+        <option value="$PROJECT_DIR$/src/QAMainServer.py" />
+        <option value="$PROJECT_DIR$/data/moral_fqa_data.csv" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="54" />
+    <option name="y" value="-8" />
+    <option name="width" value="1318" />
+    <option name="height" value="784" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Moral-Education-FQA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Moral-Education-FQA" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Moral-Education-FQA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Moral-Education-FQA" type="462c0819:PsiDirectoryNode" />
+              <item name="data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Moral-Education-FQA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Moral-Education-FQA" type="462c0819:PsiDirectoryNode" />
+              <item name="preprocess_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Moral-Education-FQA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Moral-Education-FQA" type="462c0819:PsiDirectoryNode" />
+              <item name="raw_data" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Moral-Education-FQA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Moral-Education-FQA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Math-Question-Text" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="G:\Download\Moral-Education-FQA\preprocess_data\book_data_process\no-use" />
+      <recent name="G:\Download\Moral-Education-FQA\preprocess_data" />
+      <recent name="G:\Download\Moral-Education-FQA\src" />
+      <recent name="G:\Download\Moral-Education-FQA\preprocess_data\forum_data_process" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\Download\Moral-Education-FQA\preprocess_data\scrapy_data_process\scrapy_src\seewww" />
+      <recent name="G:\Download\Moral-Education-FQA\raw_data\book_data" />
+      <recent name="G:\Download\Moral-Education-FQA\data" />
+      <recent name="G:\Download\Moral-Education-FQA\src" />
+      <recent name="G:\Download\Moral-Education-FQA\preprocess_data\book_data_process" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.QAMainServer">
+    <configuration name="QAMainServer" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Moral-Education-FQA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/QAMainServer.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="bertClient" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Moral-Education-FQA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/bertClient.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="scripy_seewww_part2" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Moral-Education-FQA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/preprocess_data/scrapy_data_process/scrapy_src/seewww" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/preprocess_data/scrapy_data_process/scrapy_src/seewww/scripy_seewww_part2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="step_two_data_convet_bert_vector" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Moral-Education-FQA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/preprocess_data" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/preprocess_data/step_two_data_convet_bert_vector.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Moral-Education-FQA" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/preprocess_data/scrapy_data_process" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/preprocess_data/scrapy_data_process/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.QAMainServer" />
+        <item itemvalue="Python.bertClient" />
+        <item itemvalue="Python.step_two_data_convet_bert_vector" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.scripy_seewww_part2" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4d705ab8-6b2a-4911-937f-803ed893f864" name="Default Changelist" comment="" />
+      <created>1589808159777</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1589808159777</updated>
+      <workItem from="1589808161358" duration="162561000" />
+      <workItem from="1592180902639" duration="4303000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="166864000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="54" y="-8" width="1318" height="784" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2082671" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32872504" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31643626" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.33125648" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/preprocess_data/scrapy_data_process/scrapy_src/bzrzy/scripy_main.py</url>
+          <line>68</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/bertClient.py</url>
+          <line>45</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/bertClient.py</url>
+          <line>37</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/bertClient.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/preprocess_data/forum_data_process/qa-clean-data.csv" />
+    <entry file="file://$PROJECT_DIR$/preprocess_data/web_data_process/web_data_clean.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="10" column="63" selection-start-line="10" selection-start-column="63" selection-end-line="10" selection-end-column="63" />
+          <folding>
+            <element signature="e#45#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/question2vec1.npy" />
+    <entry file="file://$PROJECT_DIR$/preprocess_data/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="297">
+            <caret line="107" lean-forward="true" selection-start-line="107" selection-end-line="107" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess_data/book_data_process/no-use/book_data_clean.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="29" column="33" lean-forward="true" selection-start-line="27" selection-start-column="4" selection-end-line="29" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess_data/book_data_process/no-use/formate_docx.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="38">
+          <caret line="75" column="23" lean-forward="true" selection-start-line="62" selection-start-column="4" selection-end-line="75" selection-end-column="23" />
+          <folding>
+            <element signature="e#124#133#0" expanded="true" />
+            <element signature="e#1149#1902#0" />
+            <element signature="e#2546#2870#0" />
+            <element signature="e#2907#3468#0" />
+            <element signature="e#3501#4384#0" />
+            <element signature="e#4423#6742#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess_data/forum_data_process/forum_data_clean.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="74" column="43" lean-forward="true" selection-start-line="68" selection-start-column="4" selection-end-line="74" selection-end-column="43" />
+          <folding>
+            <element signature="e#88#98#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raw_data/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="243">
+            <caret line="37" column="9" lean-forward="true" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess_data/book_data_process/book_data_phrase.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="43" column="54" selection-start-line="43" selection-start-column="54" selection-end-line="43" selection-end-column="54" />
+          <folding>
+            <element signature="e#46#55#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/raw_data/scrapy_data/seewww/德育方法/d6051162-a03c-11ea-9e57-98541b078ca2-2020-05-13【以爱之名 为爱加冕】——南栾小学开展“母亲节”感恩教育主题活.txt" />
+    <entry file="file://$PROJECT_DIR$/raw_data/scrapy_data/seewww/德育方法/258144b0-a03d-11ea-bafd-98541b078ca2-2020-03-03疫情防控 大家心连心 线上教学 我们一直在路上.txt" />
+    <entry file="file://$PROJECT_DIR$/raw_data/scrapy_data/seewww/德育方法/231eb188-a03d-11ea-b498-98541b078ca2-2020-04-29病毒无情得中有爱  立足岗位落实行动.txt" />
+    <entry file="file://$PROJECT_DIR$/raw_data/scrapy_data/seewww/德育方法/24b86986-a03d-11ea-9058-98541b078ca2-2020-03-09网课教学案例——期待成就课堂.txt" />
+    <entry file="file://$PROJECT_DIR$/raw_data/scrapy_data/seewww/德育方法/26f09df6-a03d-11ea-8715-98541b078ca2-2019-12-25胶州市张应小学：法治教育走进校园.txt" />
+    <entry file="file://$PROJECT_DIR$/raw_data/scrapy_data/seewww/德育方法/23d8d5a6-a03d-11ea-b392-98541b078ca2-2020-03-09杨威中学：线上教学心得体会.txt" />
+    <entry file="file://$PROJECT_DIR$/raw_data/scrapy_data/seewww/德育方法/27a8adf0-a03d-11ea-9e03-98541b078ca2-2019-12-16班上有个“大个子”.txt" />
+    <entry file="file://$PROJECT_DIR$/raw_data/scrapy_data/seewww/德育方法/263cd376-a03d-11ea-9542-98541b078ca2-2019-12-25胶州市张应小学：三项措施夯实法制宣传教育工作.txt" />
+    <entry file="file://$PROJECT_DIR$/raw_data/scrapy_data/seewww/德育方法/d6bce814-a03c-11ea-a9fe-98541b078ca2-2020-04-29病毒无情得中有爱  立足岗位落实行动.txt" />
+    <entry file="file://$PROJECT_DIR$/raw_data/scrapy_data/seewww/part2/高考/5936828a-a089-11ea-9e56-98541b078ca2-2013-12-03高考英语作文开头万能句.txt" />
+    <entry file="file://$PROJECT_DIR$/raw_data/scrapy_data/seewww/part2/高考/b3d3bb9e-a089-11ea-9305-98541b078ca2-2013-12-03高考英语作文开头万能句.txt" />
+    <entry file="file://$PROJECT_DIR$/raw_data/scrapy_data/seewww/part2/高考/b4dd7018-a089-11ea-ba4b-98541b078ca2-2013-10-25政治主观题解答中的“方向性失误”及其对策.txt" />
+    <entry file="file://$PROJECT_DIR$/raw_data/scrapy_data/seewww/part2/高考/b8f8312c-a089-11ea-9609-98541b078ca2-2011-12-212012年高考英语考试大纲985个核心单词(4).txt" />
+    <entry file="file://$PROJECT_DIR$/raw_data/scrapy_data/seewww/part2/高考/b9b34e74-a089-11ea-ada8-98541b078ca2-2011-12-212012年高考英语考试大纲985个核心单词(3).txt" />
+    <entry file="file://$PROJECT_DIR$/raw_data/scrapy_data/seewww/part2/高考/b34e6a68-a089-11ea-af79-98541b078ca2-2014-04-18《哲学与生活》中值得特别关注的几个知识点.txt" />
+    <entry file="file://$PROJECT_DIR$/raw_data/scrapy_data/seewww/part2/高考/b68dd8e2-a089-11ea-a2f4-98541b078ca2-2011-12-212012年高考英语考试大纲985个核心单词(7).txt" />
+    <entry file="file://$PROJECT_DIR$/raw_data/scrapy_data/seewww/part2/高考/b83ef2f4-a089-11ea-bcd9-98541b078ca2-2011-12-212012年高考英语考试大纲985个核心单词(5).txt" />
+    <entry file="file://$PROJECT_DIR$/raw_data/scrapy_data/seewww/part2/高考/b563d354-a089-11ea-9a7b-98541b078ca2-2013-07-08正确理解公民在法律面前一律平等的原则.txt" />
+    <entry file="file://$PROJECT_DIR$/raw_data/scrapy_data/seewww/part2/高考/b458471e-a089-11ea-9944-98541b078ca2-2013-11-212012年高考英语考试大纲985个核心单词(8).txt" />
+    <entry file="file://$PROJECT_DIR$/raw_data/scrapy_data/seewww/part1/学习方法/6abb45be-a086-11ea-8228-98541b078ca2-2013-12-30健康的体态目标.txt" />
+    <entry file="file://$PROJECT_DIR$/raw_data/scrapy_data/seewww/part2/高考/2d15e92c-a08a-11ea-833f-98541b078ca2-2014-04-18《哲学与生活》中值得特别关注的几个知识点.txt" />
+    <entry file="file://$PROJECT_DIR$/raw_data/scrapy_data/seewww/part2/高考/3babb61a-a08a-11ea-94e7-98541b078ca2-2014-04-18《哲学与生活》中值得特别关注的几个知识点.txt" />
+    <entry file="file://$PROJECT_DIR$/raw_data/scrapy_data/seewww/part2/高考/3c621268-a08a-11ea-9395-98541b078ca2-2013-12-03高考英语作文开头万能句.txt" />
+    <entry file="file://$PROJECT_DIR$/preprocess_data/scrapy_data_process/scrapy_src/bzrzy/scripy_main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="126" column="72" selection-start-line="123" selection-start-column="24" selection-end-line="126" selection-end-column="72" />
+          <folding>
+            <element signature="e#45#74#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess_data/scrapy_data_process/test.py" />
+    <entry file="file://$PROJECT_DIR$/preprocess_data/scrapy_data_process/scrapy_src/seewww/scripy_seewww_part2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="141" column="26" selection-start-line="141" selection-start-column="26" selection-end-line="141" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess_data/scrapy_data_process/scrapy_src/seewww/scripy_seewww_part1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="104" column="14" selection-start-line="104" selection-start-column="14" selection-end-line="104" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess_data/book_data_process/book_data.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="503">
+          <caret line="62" column="20" selection-end-line="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess_data/web_data_process/web_data.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="171">
+          <caret line="9" lean-forward="true" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess_data/forum_data_process/forum_data.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="510">
+          <caret line="262" lean-forward="true" selection-end-line="262" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess_data/forum_data_process/forum_data_backup.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="205">
+          <caret line="1443" column="19" lean-forward="true" selection-start-line="1443" selection-end-line="1444" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/preprocess_data/step_two_data_convet_bert_vector.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="29" column="64" selection-start-line="29" selection-start-column="64" selection-end-line="29" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/QAMainServer.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="e#45#68#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/bertClient.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="81" column="18" selection-start-line="81" selection-start-column="18" selection-end-line="81" selection-end-column="18" />
+          <folding>
+            <element signature="e#45#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data/moral_fqa_data.csv">
+      <provider editor-type-id="csv-table-editor">
+        <state showInfoPanel="true" fixedHeaders="false" rowLines="3" />
+      </provider>
+      <provider selected="true" editor-type-id="csv-text-editor">
+        <state relative-caret-position="1089">
+          <caret line="311" column="46" selection-start-line="311" selection-start-column="46" selection-end-line="311" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
