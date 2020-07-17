@@ -1,0 +1,9 @@
+server:
+  port: 8082
+  context_path: /test
+
+
+
+spring:
+    solr:
+      host: http://172.18.136.89:8983/solr/ai_teacher_pro_pro

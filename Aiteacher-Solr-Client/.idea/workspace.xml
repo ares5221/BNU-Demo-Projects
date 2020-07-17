@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4ead02de-4d20-4150-86b3-a0edb32e8023" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CompilerWorkspaceConfiguration">
+    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="Aiteacher-Solr-Client" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="E:/maven/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="E:\maven\apache-maven-3.6.3\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1eANH3Dh6Vk42azu085z8WcOXZo" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="cn.edu.bnu.AiteacherSolrClient.util" />
+      <recent name="cn.edu.bnu.AiteacherSolrClient.entity.solr" />
+      <recent name="cn.edu.bnu.AiteacherSolrClient.repository.solr" />
+      <recent name="cn.edu.bnu.AiteacherSolrClient.service" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="AiteacherSolrClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="Aiteacher-Solr-Client" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="cn.edu.bnu.AiteacherSolrClient.AiteacherSolrClientApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4ead02de-4d20-4150-86b3-a0edb32e8023" name="Default Changelist" comment="" />
+      <created>1593760346127</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1593760346127</updated>
+      <workItem from="1593760347716" duration="3235000" />
+      <workItem from="1594711654097" duration="4136000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="167" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1593760661233">
+      <screen x="62" y="0" width="1302" height="768" />
+    </state>
+    <state x="167" y="39" key="#com.intellij.execution.impl.EditConfigurationsDialog/62.0.1302.768@62.0.1302.768" timestamp="1593760661233" />
+    <state width="1259" height="192" key="GridCell.Tab.0.bottom" timestamp="1593762759906">
+      <screen x="62" y="0" width="1302" height="768" />
+    </state>
+    <state width="1259" height="192" key="GridCell.Tab.0.bottom/62.0.1302.768@62.0.1302.768" timestamp="1593762759906" />
+    <state width="1259" height="192" key="GridCell.Tab.0.center" timestamp="1593762759906">
+      <screen x="62" y="0" width="1302" height="768" />
+    </state>
+    <state width="1259" height="192" key="GridCell.Tab.0.center/62.0.1302.768@62.0.1302.768" timestamp="1593762759906" />
+    <state width="1259" height="192" key="GridCell.Tab.0.left" timestamp="1593762759906">
+      <screen x="62" y="0" width="1302" height="768" />
+    </state>
+    <state width="1259" height="192" key="GridCell.Tab.0.left/62.0.1302.768@62.0.1302.768" timestamp="1593762759906" />
+    <state width="1259" height="192" key="GridCell.Tab.0.right" timestamp="1593762759906">
+      <screen x="62" y="0" width="1302" height="768" />
+    </state>
+    <state width="1259" height="192" key="GridCell.Tab.0.right/62.0.1302.768@62.0.1302.768" timestamp="1593762759906" />
+    <state width="1259" height="192" key="GridCell.Tab.1.bottom" timestamp="1593762759906">
+      <screen x="62" y="0" width="1302" height="768" />
+    </state>
+    <state width="1259" height="192" key="GridCell.Tab.1.bottom/62.0.1302.768@62.0.1302.768" timestamp="1593762759906" />
+    <state width="1259" height="192" key="GridCell.Tab.1.center" timestamp="1593762759906">
+      <screen x="62" y="0" width="1302" height="768" />
+    </state>
+    <state width="1259" height="192" key="GridCell.Tab.1.center/62.0.1302.768@62.0.1302.768" timestamp="1593762759906" />
+    <state width="1259" height="192" key="GridCell.Tab.1.left" timestamp="1593762759906">
+      <screen x="62" y="0" width="1302" height="768" />
+    </state>
+    <state width="1259" height="192" key="GridCell.Tab.1.left/62.0.1302.768@62.0.1302.768" timestamp="1593762759906" />
+    <state width="1259" height="192" key="GridCell.Tab.1.right" timestamp="1593762759906">
+      <screen x="62" y="0" width="1302" height="768" />
+    </state>
+    <state width="1259" height="192" key="GridCell.Tab.1.right/62.0.1302.768@62.0.1302.768" timestamp="1593762759906" />
+    <state x="214" y="26" key="SettingsEditor" timestamp="1593760488656">
+      <screen x="62" y="0" width="1302" height="768" />
+    </state>
+    <state x="214" y="26" key="SettingsEditor/62.0.1302.768@62.0.1302.768" timestamp="1593760488656" />
+    <state x="671" y="364" key="com.intellij.ide.util.TipDialog" timestamp="1594716247045">
+      <screen x="62" y="0" width="1858" height="1080" />
+    </state>
+    <state x="671" y="364" key="com.intellij.ide.util.TipDialog/62.0.1858.1080/-1920.0.1920.1040@62.0.1858.1080" timestamp="1594716247045" />
+  </component>
+</project>
